@@ -27,14 +27,6 @@
       "request"
     ],
     "generic-javadoc": false,
-    "properties": [
-      {
-        "field": "text",
-        "label": "Digite um texto aqui por favor.",
-        "type": "textfield",
-        "json-expose": true,
-        "json-property": "text"
-      }
-    ]
+    "properties": []
   }
 }
