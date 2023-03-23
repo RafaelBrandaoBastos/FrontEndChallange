@@ -1,0 +1,208 @@
+{
+    "project-settings": {
+      "code-owner": "React App",
+      "bundle-path": "../core/src/main/java",
+      "test-path": "../core/src/test/java",
+      "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+      "component-path": "reactapp",
+      "model-interface-pkg": "com.reactapp.core.models",
+      "model-impl-pkg": "com.reactapp.core.models.impl"
+    },
+    "name": "login-component",
+    "title": "Login Component",
+    "group": "React App - Content",
+    "type": "components",
+    "options": {
+      "js": false,
+      "jstxt": false,
+      "css": false,
+      "csstxt": false,
+      "html": false,
+      "html-content": false,
+      "slingmodel": true,
+      "testclass": false,
+      "junit-major-version": 5,
+      "content-exporter": true,
+      "model-adaptables": [
+        "request"
+      ],
+      "generic-javadoc": false,
+      "properties": [ 
+
+
+
+
+
+            { 
+              "field": "title",
+              "type": "textfield",
+              "label": "Digite o conteúdo do Título",
+              "json-expose": true,
+              "json-property": "title"
+            },
+            {
+              "field": "titleColor",
+              "label": "Cor do Título",
+              "type": "textfield",
+              "json-expose": true,
+              "json-property": "titleColor"
+            },
+            { 
+              "field": "titleSize",
+              "type": "textfield",
+              "label": "Digite um tamanho do Título em px",
+              "json-expose": true,
+              "json-property": "titleSize"
+            },
+
+
+
+
+            { 
+              "field": "subTitle",
+              "type": "textfield",
+              "label": "Digite o conteúdo do Subtítulo",
+              "json-expose": true,
+              "json-property": "subTitle"
+            },
+            {
+              "field": "subTitleColor",
+              "label": "Cor do Subtítulo",
+              "type": "textfield",
+              "json-expose": true,
+              "json-property": "subTitleColor"
+            },
+            { 
+              "field": "subTitleSize",
+              "type": "textfield",
+              "label": "Digite um tamanho do Subtítulo em px",
+              "json-expose": true,
+              "json-property": "subTitleSize"
+            },
+
+
+
+
+
+            { 
+              "field": "text",
+              "type": "textfield",
+              "label": "Digite o conteúdo do texto",
+              "json-expose": true,
+              "json-property": "text"
+            },
+            {
+              "field": "textColor",
+              "label": "Cor do texto",
+              "type": "textfield",
+              "json-expose": true,
+              "json-property": "textColor"
+            },
+            { 
+              "field": "textSize",
+              "type": "textfield",
+              "label": "Digite um tamanho do texto em px",
+              "json-expose": true,
+              "json-property": "textSize"
+            },
+
+
+
+
+            { 
+              "field": "label",
+              "type": "textfield",
+              "label": "Digite uma label para o botão",
+              "json-expose": true,
+              "json-property": "label"
+            },            
+            {
+              "field": "labelColor",
+              "label": "Cor a label",
+              "type": "textfield",
+              "json-expose": true,
+              "json-property": "labelColor"
+            },
+            { 
+              "field": "labelSize",
+              "type": "textfield",
+              "label": "Digite um tamanho da label em px",
+              "json-expose": true,
+              "json-property": "labelSize"
+            },
+            {
+              "field": "buttonColor",
+              "label": "Cor do botão",
+              "type": "textfield",
+              "json-expose": true,
+              "json-property": "buttonColor"
+            },
+
+
+
+            
+            { 
+              "field": "inputUser",
+              "type": "textfield",
+              "label": "Digite o conteúdo do input User",
+              "json-expose": true,
+              "json-property": "inputUser"
+            },            {
+              "field": "inputUserColor",
+              "label": "Cor do input User",
+              "type": "textfield",
+              "json-expose": true,
+              "json-property": "inputUserColor"
+            },
+
+
+
+
+
+            { 
+              "field": "inputPassword",
+              "type": "textfield",
+              "label": "Digite o conteúdo do input Password",
+              "json-expose": true,
+              "json-property": "inputPassword"
+            },            {
+              "field": "inputPasswordColor",
+              "label": "Cor do input Password",
+              "type": "textfield",
+              "json-expose": true,
+              "json-property": "inputPasswordColor"
+            },
+
+
+
+
+
+
+            {
+              "field": "backgroundImage",
+              "type": "image",
+              "label": "Imagem Background",
+              "json-expose": true,
+              "json-property": "backgroundImage"
+            },
+
+
+
+
+            
+
+            {
+              "field": "logoImage",
+              "type": "image",
+              "label": "Imagem Logo",
+              "json-expose": true,
+              "json-property": "logoImage"
+            }
+          
+
+      ]
+    }
+  }
+
+
+ 
