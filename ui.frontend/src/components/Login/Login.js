@@ -1,12 +1,12 @@
 import React from 'react';
 import { MapTo } from '@adobe/aem-react-editable-components';
 import { useHistory } from 'react-router-dom'; 
-import {Container, Img, SubContainer, LoginContainer} from "./style";
+import {Container, Img, Logo, LogoContainer, SubContainer, LoginContainer} from "./style";
 import LoginButton from "../LoginButton/LoginButton";
 import Text from "../LoginText/LoginText";
 import Input from "../LoginInput/LoginInput";
 
-const Login = ({login, backgroundImage}) => {
+const Login = ({login, backgroundImage, logoImage}) => {
 
     {/*const history = useHistory()
     function handleClick() {
@@ -22,21 +22,25 @@ const Login = ({login, backgroundImage}) => {
 
                     <Container>
                         <SubContainer>
-                        <LoginContainer>
-                        <div style={{display: "block", height: "30%"}}>
-                            <Text type = {"title"} titleColor={titleColor} titleSize={titleSize} title={title}/>
-                            <Text type = {"text"} textColor={textColor} textSize={textSize} text={text}/>
-                        </div>
-                            
-                        <div>
-                            <Text type = {"subtitle"} subTitleColor={subTitleColor} subTitlesize={subTitleSize} subtitle={subTitle}/>  
-                            <Input type = {"user"} inputUserColor={inputUserColor} inputUserText={inputUserText}/>
-                            <Input type = {"password"} inputPasswordColor={inputPasswordColor} inputPasswordText={inputPasswordText}/>    
-                        </div>
-                        <LoginButton btype = {"continuar"} text={label} color={buttonColor} labelcolor={labelColor} size={labelSize}/>
-                        </LoginContainer>             
+                            <LoginContainer>
+                            <div style={{display: "block", height: "30%"}}>
+                                <Text type = {"title"} titleColor={titleColor} titleSize={titleSize} title={title}/>
+                                <Text type = {"text"} textColor={textColor} textSize={textSize} text={text}/>
+                            </div>
+                                
+                            <div>
+                                <Text type = {"subtitle"} subTitleColor={subTitleColor} subTitlesize={subTitleSize} subtitle={subTitle}/>  
+                                <Input type = {"user"} inputUserColor={inputUserColor} inputUserText={inputUserText}/>
+                                <Input type = {"password"} inputPasswordColor={inputPasswordColor} inputPasswordText={inputPasswordText}/>    
+                            </div>
+                            <LoginButton btype = {"continuar"} text={label} color={buttonColor} labelcolor={labelColor} size={labelSize}/>
+                            </LoginContainer>             
                         </SubContainer>
-                        <Img src={backgroundImage && backgroundImage.src} alt="ImageComponent"/>
+                        
+                            <Img src={backgroundImage && backgroundImage.src} alt="ImageComponent"/>
+                            <LogoContainer>
+                                <Logo src={logoImage && logoImage.src} alt="LogoComponent"/>
+                            </LogoContainer>
                         {/*<button onClick = {handleClick}>Prox</button>
                         <p>Login</p>*/} 
                     </Container>

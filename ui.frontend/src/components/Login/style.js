@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    justify-content: flex-end;
+    position: relative;
     display: flex;
     width: 100vw;
     height: 100vh;   
@@ -15,10 +17,9 @@ export const SubContainer = styled.div`
     background: linear-gradient(#33383D, #1C1D20);
     @media (max-width: 768px) {
         width: 100%;
-        justify-content: center;
-        align-items: center;
     }   
 `;
+
 export const LoginContainer = styled.div`
     display: flex;
     width: 380px;
@@ -33,11 +34,34 @@ export const LoginContainer = styled.div`
     }
 `;
 
+
 export const Img = styled.img`
     object-fit: cover;
     width: 50%;
-    height: auto;
+    height: 100vh;
+    position: relative;
     @media (max-width: 768px) {
         display: none;
+    } 
+`;
+
+
+export const Logo = styled.img`
+    display: flex;
+    height: auto;
+    @media (max-width: 400px) {
+        width 100%; 
+    }
+`;
+
+export const LogoContainer = styled.div`
+    position: absolute;
+    display: flex;
+    justify-content: center; 
+    width 50%;
+    height: auto;
+    @media (max-width: 768px) {
+        width 100%; 
+        padding-right: 90px;   
     } 
 `;
