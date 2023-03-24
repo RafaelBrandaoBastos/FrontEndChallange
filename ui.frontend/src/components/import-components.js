@@ -19,6 +19,8 @@ import "./Page/Page";
 import "./Container/Container";
 import "./ExperienceFragment/ExperienceFragment";
 import './Login/Login';
+import './LoginButton/LoginButton';
+import "./LoginText/LoginText"
 
 import { MapTo } from "@adobe/aem-react-editable-components";
 

@@ -10,6 +10,7 @@
     },
     "name": "login-component",
     "title": "Login Component",
+    "field": "login",
     "group": "React App - Content",
     "type": "components",
     "options": {
@@ -29,7 +30,7 @@
       "generic-javadoc": false,
       "properties": [ 
 
-
+      
 
 
 
@@ -199,8 +200,7 @@
               "json-property": "logoImage"
             }
           
-
-      ]
+          ]
     }
   }
 

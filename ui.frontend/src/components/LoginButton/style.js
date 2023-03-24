@@ -6,6 +6,9 @@ export const BtnContinuar = styled.button`
   width: 379px;
   height: 67px;
   border-radius: 40px;
+  font-weight: 700;
+  line-height: 27px;
+  font-family: 'Poppins';
   background-color: ${({color}) => color};
   color: ${({labelcolor}) => labelcolor};
   font-size: ${({labelsize}) => labelsize};
