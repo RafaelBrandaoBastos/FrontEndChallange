@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.reactapp.core.models",
     "model-impl-pkg": "com.reactapp.core.models.impl"
   },
-  "name": "meu-componente",
-  "title": "Meu Componente",
+  "name": "loginbutton-component",
+  "title": "LoginButton Component",
   "group": "React App - Content",
   "type": "components",
   "options": {

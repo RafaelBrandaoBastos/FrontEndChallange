@@ -2,6 +2,7 @@ import React from 'react';
 import { MapTo } from '@adobe/aem-react-editable-components';
 import { useHistory } from 'react-router-dom'; 
 import {Container, Img, SubContainer, LoginContainer} from "./style";
+import LoginButton from "../LoginButton/LoginButton";
 
 const Login = ({
 
@@ -42,7 +43,7 @@ const Login = ({
                 <div>
                     
                 </div>
-
+                <LoginButton btype = {"continuar"} text={label} color={buttonColor} labelcolor={labelColor} size={labelSize}/>
             </LoginContainer>             
             </SubContainer>
             <Img src={backgroundImage.src} alt="ImageComponent"/>
