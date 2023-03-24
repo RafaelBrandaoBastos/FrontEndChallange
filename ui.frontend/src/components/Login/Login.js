@@ -5,7 +5,7 @@ import {Container, Img, SubContainer, LoginContainer} from "./style";
 import LoginButton from "../LoginButton/LoginButton";
 import Text from "../LoginText/LoginText";
 
-const Login = ({login}) => {
+const Login = ({login, backgroundImage}) => {
 
     {/*const history = useHistory()
     function handleClick() {
@@ -13,7 +13,7 @@ const Login = ({login}) => {
     }*/}
     return(
         <>
-            {login.map(({label, buttonColor, labelColor, labelSize, backgroundImage, title, titleColor, titleSize, subTitle, subTitleColor, subTitleSize, text, textColor, textSize = {} }, index) => (
+            {login.map(({label, buttonColor, labelColor, labelSize, title, titleColor, titleSize, subTitle, subTitleColor, subTitleSize, text, textColor, textSize = {} }, index) => (
                 <div key={index}>
                     <Container>
                         <SubContainer>
