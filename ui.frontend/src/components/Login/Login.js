@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import {Container, Img, SubContainer, LoginContainer} from "./style";
 import LoginButton from "../LoginButton/LoginButton";
 import Text from "../LoginText/LoginText";
+import Input from "../LoginInput/LoginInput";
 
 const Login = ({login, backgroundImage}) => {
 
@@ -13,8 +14,12 @@ const Login = ({login, backgroundImage}) => {
     }*/}
     return(
         <>
-            {login.map(({label, buttonColor, labelColor, labelSize, title, titleColor, titleSize, subTitle, subTitleColor, subTitleSize, text, textColor, textSize = {} }, index) => (
+            {login.map(({label, buttonColor, labelColor, labelSize, title, titleColor, titleSize, 
+            subTitle, subTitleColor, subTitleSize, text, textColor, textSize, inputPasswordColor, 
+            inputPasswordText, inputUserColor, inputUserText = {} }, index) => (
+
                 <div key={index}>
+
                     <Container>
                         <SubContainer>
                         <LoginContainer>
@@ -24,7 +29,9 @@ const Login = ({login, backgroundImage}) => {
                         </div>
                             
                         <div>
-                            <Text type = {"subtitle"} subTitleColor={subTitleColor} subTitlesize={subTitleSize} subtitle={subTitle}/>      
+                            <Text type = {"subtitle"} subTitleColor={subTitleColor} subTitlesize={subTitleSize} subtitle={subTitle}/>  
+                            <Input type = {"user"} inputUserColor={inputUserColor} inputUserText={inputUserText}/>
+                            <Input type = {"password"} inputPasswordColor={inputPasswordColor} inputPasswordText={inputPasswordText}/>    
                         </div>
                         <LoginButton btype = {"continuar"} text={label} color={buttonColor} labelcolor={labelColor} size={labelSize}/>
                         </LoginContainer>             
@@ -56,7 +63,11 @@ Login.defaultProps = {
             buttonColor: "#FF2D04",
             labelColor: "#FFFFFF" ,
             labelSize: "18px", 
-            label: "Continuar",   
+            label: "Continuar",  
+            inputPasswordColor: "#E0E0E0", 
+            inputPasswordText: "Senha", 
+            inputUserColor: "#E0E0E0", 
+            inputUserText: "Usuário"
         },
     ],
 }; 
