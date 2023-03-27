@@ -2,15 +2,19 @@ import React from 'react'
 import {InputU, InputP} from'./style.js'
 import { MapTo } from '@adobe/aem-react-editable-components';
 
-const Input = (props) => {
-        if(props.type == "user"){
+const Input = ({type, register, onChange, inputUsercolor, inputUserText, inputdata, className, inputPasswordcolor, inputPasswordText}) => {
+        if(type == "user"){
             return (
-                <InputU labelcolor={props.inputUsercolor} placeholder = {props.inputUserText}/>   
+                <InputU type={type} onChange = {onChange} labelcolor={inputUsercolor} 
+                placeholder = {inputUserText} defaultValue={inputdata} editable={true} 
+                {...register} className={className}/>   
             ) 
         }
-        if(props.type == "password"){
+        if(type == "password"){
             return (
-                <InputP labelcolor={props.inputPasswordcolor} placeholder = {props.inputPasswordText}/>   
+                <InputP type={type} onChange = {onChange} labelcolor={inputPasswordcolor} 
+                placeholder = {inputPasswordText} defaultValue={inputdata} 
+                editable={true} {...register} className={className}/>   
             ) 
         }
          

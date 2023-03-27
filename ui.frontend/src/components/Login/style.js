@@ -20,7 +20,7 @@ export const SubContainer = styled.div`
     }   
 `;
 
-export const LoginContainer = styled.div`
+export const LoginForm = styled.form`
     display: flex;
     width: 380px;
     height: 80%;
@@ -64,4 +64,14 @@ export const LogoContainer = styled.div`
         width 100%; 
         padding-right: 90px;   
     } 
+`;
+export const ErrorMessage = styled.span`
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #E9B425;
+margin: auto;
 `;

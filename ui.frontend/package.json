@@ -20,6 +20,7 @@
     "react": "^16.12.0",
     "react-app-polyfill": "^1.0.5",
     "react-dom": "^16.12.0",
+    "react-hook-form": "^7.43.8",
     "react-router-dom": "^5.1.2",
     "react-universal-component": "^4.5.0",
     "sanitize-html": "^2.3.3",

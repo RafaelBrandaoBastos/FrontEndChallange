@@ -13,7 +13,6 @@ export const BtnContinuar = styled.button`
   color: ${({labelcolor}) => labelcolor};
   font-size: ${({labelsize}) => labelsize};
   @media (max-width: 400px) {
-    width: 82vw;
-    
+    width: 82vw;  
 }
 `;
