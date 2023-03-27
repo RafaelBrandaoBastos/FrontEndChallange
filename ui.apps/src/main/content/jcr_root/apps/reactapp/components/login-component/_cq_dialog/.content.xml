@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  React App CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2023 React App
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of React App and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to React App
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from React App.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Login Component"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <layout jcr:primaryType="nt:unstructured"
+              margin="{Boolean}false"
+              sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+      <items jcr:primaryType="nt:unstructured">
+         <column jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+               <title cq-msm-lockable="./title"
+                      fieldLabel="Digite o conteúdo do Título"
+                      jcr:primaryType="nt:unstructured"
+                      name="./title"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <titleColor cq-msm-lockable="./titleColor"
+                           fieldLabel="Cor do Título"
+                           jcr:primaryType="nt:unstructured"
+                           name="./titleColor"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+               <titleSize cq-msm-lockable="./titleSize"
+                          fieldLabel="Digite um tamanho do Título em px"
+                          jcr:primaryType="nt:unstructured"
+                          name="./titleSize"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subTitle cq-msm-lockable="./subTitle"
+                         fieldLabel="Digite o conteúdo do Subtítulo"
+                         jcr:primaryType="nt:unstructured"
+                         name="./subTitle"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subTitleColor cq-msm-lockable="./subTitleColor"
+                              fieldLabel="Cor do Subtítulo"
+                              jcr:primaryType="nt:unstructured"
+                              name="./subTitleColor"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+               <subTitleSize cq-msm-lockable="./subTitleSize"
+                             fieldLabel="Digite um tamanho do Subtítulo em px"
+                             jcr:primaryType="nt:unstructured"
+                             name="./subTitleSize"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <text cq-msm-lockable="./text"
+                     fieldLabel="Digite o conteúdo do texto"
+                     jcr:primaryType="nt:unstructured"
+                     name="./text"
+                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <textColor cq-msm-lockable="./textColor"
+                          fieldLabel="Cor do texto"
+                          jcr:primaryType="nt:unstructured"
+                          name="./textColor"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+               <textSize cq-msm-lockable="./textSize"
+                         fieldLabel="Digite um tamanho do texto em px"
+                         jcr:primaryType="nt:unstructured"
+                         name="./textSize"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <label cq-msm-lockable="./label"
+                      fieldLabel="Digite uma label para o botão"
+                      jcr:primaryType="nt:unstructured"
+                      name="./label"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <labelColor cq-msm-lockable="./labelColor"
+                           fieldLabel="Cor a label"
+                           jcr:primaryType="nt:unstructured"
+                           name="./labelColor"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+               <labelSize cq-msm-lockable="./labelSize"
+                          fieldLabel="Digite um tamanho da label em px"
+                          jcr:primaryType="nt:unstructured"
+                          name="./labelSize"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <buttonColor cq-msm-lockable="./buttonColor"
+                            fieldLabel="Cor do botão"
+                            jcr:primaryType="nt:unstructured"
+                            name="./buttonColor"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+               <inputUser cq-msm-lockable="./inputUser"
+                          fieldLabel="Digite o conteúdo do input User"
+                          jcr:primaryType="nt:unstructured"
+                          name="./inputUser"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <inputUserColor cq-msm-lockable="./inputUserColor"
+                               fieldLabel="Cor do input User"
+                               jcr:primaryType="nt:unstructured"
+                               name="./inputUserColor"
+                               sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+               <inputPassword cq-msm-lockable="./inputPassword"
+                              fieldLabel="Digite o conteúdo do input Password"
+                              jcr:primaryType="nt:unstructured"
+                              name="./inputPassword"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <inputPasswordColor cq-msm-lockable="./inputPasswordColor"
+                                   fieldLabel="Cor do input Password"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./inputPasswordColor"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+               <backgroundImageResType jcr:primaryType="nt:unstructured"
+                                       name="./backgroundImage/sling:resourceType"
+                                       sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                       value="core/wcm/components/image/v2/image"/>
+               <backgroundImage allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                cq-msm-lockable="./backgroundImage/file"
+                                fieldLabel="Imagem Background"
+                                fileNameParameter="./backgroundImage/fileName"
+                                fileReferenceParameter="./backgroundImage/fileReference"
+                                jcr:primaryType="nt:unstructured"
+                                mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                multiple="{Boolean}false"
+                                name="./backgroundImage/file"
+                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                title="Drag to select image"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+               <logoImageResType jcr:primaryType="nt:unstructured"
+                                 name="./logoImage/sling:resourceType"
+                                 sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                 value="core/wcm/components/image/v2/image"/>
+               <logoImage allowUpload="{Boolean}false"
+                          autoStart="{Boolean}false"
+                          class="cq-droptarget"
+                          cq-msm-lockable="./logoImage/file"
+                          fieldLabel="Imagem Logo"
+                          fileNameParameter="./logoImage/fileName"
+                          fileReferenceParameter="./logoImage/fileReference"
+                          jcr:primaryType="nt:unstructured"
+                          mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                          multiple="{Boolean}false"
+                          name="./logoImage/file"
+                          sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                          title="Drag to select image"
+                          uploadUrl="${suffix.path}"
+                          useHTML5="{Boolean}true"/>
+            </items>
+         </column>
+      </items>
+   </content>
+</jcr:root>
