@@ -8,12 +8,12 @@ height: 60px;
 background: #26292C;
 border: 1px solid #FFFFFF; 
 border-radius: 50px;
-font-family: 'Poppins';
+color: ${({ucolor}) => ucolor};
+font-family: 'Poppins'
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-color: #E0E0E0;
 padding-left: 4%;
 background-image: url(${VectorU});
 background-repeat: no-repeat;
@@ -38,7 +38,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-color: #E0E0E0;
+color: ${({ucolor}) => ucolor};
 }
 `;
 
@@ -53,7 +53,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-color: #E0E0E0;
+color: ${({pcolor}) => pcolor};
 padding-left: 4%;
 background-image: url(${VectorP});
 background-repeat: no-repeat;
@@ -77,6 +77,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-color: #E0E0E0;
+color: ${({pcolor}) => pcolor};
 }
 `;

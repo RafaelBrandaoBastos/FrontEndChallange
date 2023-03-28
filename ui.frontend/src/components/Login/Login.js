@@ -50,7 +50,7 @@ const Login = ({login, backgroundImage, logoImage}) => {
         <>
             {login.map(({label, buttonColor, labelColor, labelSize, title, titleColor, titleSize, 
             subTitle, subTitleColor, subTitleSize, text, textColor, textSize, inputPasswordColor, 
-            inputPasswordText, inputUserColor, inputUserText = {} }, index) => (
+            inputPasswordText, inputUserColor, inputUserText, titlefont, subtitlefont,textfont, labelfont = {} }, index) => (
 
                 <div key={index}>
 
@@ -58,17 +58,17 @@ const Login = ({login, backgroundImage, logoImage}) => {
                         <SubContainer>
                             <LoginForm onSubmit={handleSubmit(onSubmit)}>
                                 <div style={{display: "block", height: "30%"}}>
-                                    <Text type = {"title"} titleColor={titleColor} titleSize={titleSize} title={title}/>
-                                    <Text type = {"text"} textColor={textColor} textSize={textSize} text={text}/>
+                                    <Text type = {"title"} titlefont = {titlefont} titleColor={titleColor} titleSize={titleSize} title={title}/>
+                                    <Text type = {"text"} textfont = {textfont} textColor={textColor} textSize={textSize} text={text}/>
                                 </div>
                                     
                                 <div>
-                                    <Text type = {"subtitle"} subTitleColor={subTitleColor} subTitlesize={subTitleSize} subtitle={subTitle}/>  
+                                    <Text type = {"subtitle"} subtitlefont = {subtitlefont} subTitleColor={subTitleColor} subTitlesize={subTitleSize} subtitle={subTitle}/>  
                                     <Input type = {"user"} inputUserColor={inputUserColor} inputUserText={inputUserText} inputdata = {datauser} onChange = {handleChangeuser} className={errors.user?"invalid": " "} {...{register:register("user", {required:true, pattern: /^(admin)$/})}}/>
                                     <Input type = {"password"} inputPasswordColor={inputPasswordColor} inputPasswordText={inputPasswordText} inputdata = {datapassword} onChange = {handleChangepassword} className={errors.password?"invalid": " "} {...{register:register("password", {required:true, pattern: /^(admin)$/})}}/>    
                                     {errors.password && <ErrorMessage>Ops, usuário ou senha inválidos.<br/>Tente novamente!</ErrorMessage> || errors.user && <ErrorMessage>Ops, usuário ou senha inválidos.<br/>Tente novamente!</ErrorMessage>}
                                 </div>
-                                <LoginButton type={"Submit"} text={label} color={buttonColor} labelcolor={labelColor} size={labelSize}/>
+                                <LoginButton labelfont = {labelfont} type={"Submit"} text={label} color={buttonColor} labelcolor={labelColor} size={labelSize}/>
                             </LoginForm>             
                         </SubContainer>
                         
@@ -101,10 +101,14 @@ Login.defaultProps = {
             labelColor: "#FFFFFF" ,
             labelSize: "18px", 
             label: "Continuar",  
-            inputPasswordColor: "#E0E0E0", 
+            inputPasswordColor: "#FFFFFF", 
             inputPasswordText: "Senha", 
-            inputUserColor: "#E0E0E0", 
-            inputUserText: "Usuário"
+            inputUserColor: "#FFFFFF", 
+            inputUserText: "Usuário",
+            titlefont: "Poppins", 
+            subtitlefont: "Poppins",
+            textfont: "Poppins", 
+            labelfont: "Poppins",
         },
     ],
 }; 

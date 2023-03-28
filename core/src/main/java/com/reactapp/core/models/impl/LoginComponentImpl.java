@@ -49,17 +49,23 @@ public class LoginComponentImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleSize;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String titlefont;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String subTitle;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String subTitleColor;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String subTitleSize;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String subtitlefont;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String text;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String textColor;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String textSize;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textfont;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String label;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -68,6 +74,8 @@ public class LoginComponentImpl
     private String labelSize;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String buttonColor;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String labelfont;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String inputUser;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -102,6 +110,12 @@ public class LoginComponentImpl
     }
 
     @Override
+    @JsonProperty("titlefont")
+    public String getTitlefont() {
+        return titlefont;
+    }
+
+    @Override
     @JsonProperty("subTitle")
     public String getSubTitle() {
         return subTitle;
@@ -120,6 +134,12 @@ public class LoginComponentImpl
     }
 
     @Override
+    @JsonProperty("subtitlefont")
+    public String getSubtitlefont() {
+        return subtitlefont;
+    }
+
+    @Override
     @JsonProperty("text")
     public String getText() {
         return text;
@@ -135,6 +155,12 @@ public class LoginComponentImpl
     @JsonProperty("textSize")
     public String getTextSize() {
         return textSize;
+    }
+
+    @Override
+    @JsonProperty("textfont")
+    public String getTextfont() {
+        return textfont;
     }
 
     @Override
@@ -159,6 +185,12 @@ public class LoginComponentImpl
     @JsonProperty("buttonColor")
     public String getButtonColor() {
         return buttonColor;
+    }
+
+    @Override
+    @JsonProperty("labelfont")
+    public String getLabelfont() {
+        return labelfont;
     }
 
     @Override

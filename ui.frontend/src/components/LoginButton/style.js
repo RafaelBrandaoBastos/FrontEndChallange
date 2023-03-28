@@ -8,10 +8,10 @@ export const BtnContinuar = styled.button`
   border-radius: 40px;
   font-weight: 700;
   line-height: 27px;
-  font-family: 'Poppins';
-  background-color: ${({color}) => color};
-  color: ${({labelcolor}) => labelcolor};
-  font-size: ${({labelsize}) => labelsize};
+  font-family: ${(props) => props.font};
+  background-color: ${(props) => props.color};
+  color: ${(props) => props.labelcolor};
+  font-size: ${(props) => props.labelsize};
   @media (max-width: 400px) {
     width: 82vw;  
 }

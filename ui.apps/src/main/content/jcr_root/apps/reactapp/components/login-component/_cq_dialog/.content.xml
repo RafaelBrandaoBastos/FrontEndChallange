@@ -42,12 +42,31 @@
                            fieldLabel="Cor do Título"
                            jcr:primaryType="nt:unstructured"
                            name="./titleColor"
-                           sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                <titleSize cq-msm-lockable="./titleSize"
                           fieldLabel="Digite um tamanho do Título em px"
                           jcr:primaryType="nt:unstructured"
                           name="./titleSize"
                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <titlefont cq-msm-lockable="./titlefont"
+                          defaultValue="poppins"
+                          fieldLabel="Fonte para o título"
+                          jcr:primaryType="nt:unstructured"
+                          name="./titlefont"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                          value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </titlefont>
                <subTitle cq-msm-lockable="./subTitle"
                          fieldLabel="Digite o conteúdo do Subtítulo"
                          jcr:primaryType="nt:unstructured"
@@ -57,12 +76,31 @@
                               fieldLabel="Cor do Subtítulo"
                               jcr:primaryType="nt:unstructured"
                               name="./subTitleColor"
-                              sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                <subTitleSize cq-msm-lockable="./subTitleSize"
                              fieldLabel="Digite um tamanho do Subtítulo em px"
                              jcr:primaryType="nt:unstructured"
                              name="./subTitleSize"
                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subtitlefont cq-msm-lockable="./subtitlefont"
+                             defaultValue="poppins"
+                             fieldLabel="Fonte para o subtítulo"
+                             jcr:primaryType="nt:unstructured"
+                             name="./subtitlefont"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                             value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </subtitlefont>
                <text cq-msm-lockable="./text"
                      fieldLabel="Digite o conteúdo do texto"
                      jcr:primaryType="nt:unstructured"
@@ -72,12 +110,31 @@
                           fieldLabel="Cor do texto"
                           jcr:primaryType="nt:unstructured"
                           name="./textColor"
-                          sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                <textSize cq-msm-lockable="./textSize"
                          fieldLabel="Digite um tamanho do texto em px"
                          jcr:primaryType="nt:unstructured"
                          name="./textSize"
                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <textfont cq-msm-lockable="./textfont"
+                         defaultValue="poppins"
+                         fieldLabel="Fonte para o texto"
+                         jcr:primaryType="nt:unstructured"
+                         name="./textfont"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                         value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </textfont>
                <label cq-msm-lockable="./label"
                       fieldLabel="Digite uma label para o botão"
                       jcr:primaryType="nt:unstructured"
@@ -87,7 +144,7 @@
                            fieldLabel="Cor a label"
                            jcr:primaryType="nt:unstructured"
                            name="./labelColor"
-                           sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                <labelSize cq-msm-lockable="./labelSize"
                           fieldLabel="Digite um tamanho da label em px"
                           jcr:primaryType="nt:unstructured"
@@ -97,7 +154,26 @@
                             fieldLabel="Cor do botão"
                             jcr:primaryType="nt:unstructured"
                             name="./buttonColor"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <labelfont cq-msm-lockable="./labelfont"
+                          defaultValue="poppins"
+                          fieldLabel="Fonte para a label"
+                          jcr:primaryType="nt:unstructured"
+                          name="./labelfont"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                          value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </labelfont>
                <inputUser cq-msm-lockable="./inputUser"
                           fieldLabel="Digite o conteúdo do input User"
                           jcr:primaryType="nt:unstructured"
@@ -107,7 +183,7 @@
                                fieldLabel="Cor do input User"
                                jcr:primaryType="nt:unstructured"
                                name="./inputUserColor"
-                               sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                <inputPassword cq-msm-lockable="./inputPassword"
                               fieldLabel="Digite o conteúdo do input Password"
                               jcr:primaryType="nt:unstructured"
@@ -117,7 +193,7 @@
                                    fieldLabel="Cor do input Password"
                                    jcr:primaryType="nt:unstructured"
                                    name="./inputPasswordColor"
-                                   sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                <backgroundImageResType jcr:primaryType="nt:unstructured"
                                        name="./backgroundImage/sling:resourceType"
                                        sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
