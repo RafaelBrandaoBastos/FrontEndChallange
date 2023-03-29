@@ -42,7 +42,7 @@
                            fieldLabel="Cor do Título"
                            jcr:primaryType="nt:unstructured"
                            name="./titleColor"
-                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
                <titleSize cq-msm-lockable="./titleSize"
                           fieldLabel="Digite um tamanho do Título em px"
                           jcr:primaryType="nt:unstructured"
@@ -76,7 +76,7 @@
                               fieldLabel="Cor do Subtítulo"
                               jcr:primaryType="nt:unstructured"
                               name="./subTitleColor"
-                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                              sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
                <subTitleSize cq-msm-lockable="./subTitleSize"
                              fieldLabel="Digite um tamanho do Subtítulo em px"
                              jcr:primaryType="nt:unstructured"
@@ -110,7 +110,7 @@
                           fieldLabel="Cor do texto"
                           jcr:primaryType="nt:unstructured"
                           name="./textColor"
-                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                          sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
                <textSize cq-msm-lockable="./textSize"
                          fieldLabel="Digite um tamanho do texto em px"
                          jcr:primaryType="nt:unstructured"
@@ -144,7 +144,7 @@
                            fieldLabel="Cor a label"
                            jcr:primaryType="nt:unstructured"
                            name="./labelColor"
-                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
                <labelSize cq-msm-lockable="./labelSize"
                           fieldLabel="Digite um tamanho da label em px"
                           jcr:primaryType="nt:unstructured"
@@ -154,7 +154,7 @@
                             fieldLabel="Cor do botão"
                             jcr:primaryType="nt:unstructured"
                             name="./buttonColor"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                            sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
                <labelfont cq-msm-lockable="./labelfont"
                           defaultValue="poppins"
                           fieldLabel="Fonte para a label"
@@ -183,7 +183,7 @@
                                fieldLabel="Cor do input User"
                                jcr:primaryType="nt:unstructured"
                                name="./inputUserColor"
-                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                               sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
                <inputPassword cq-msm-lockable="./inputPassword"
                               fieldLabel="Digite o conteúdo do input Password"
                               jcr:primaryType="nt:unstructured"
@@ -193,7 +193,7 @@
                                    fieldLabel="Cor do input Password"
                                    jcr:primaryType="nt:unstructured"
                                    name="./inputPasswordColor"
-                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
                <backgroundImageResType jcr:primaryType="nt:unstructured"
                                        name="./backgroundImage/sling:resourceType"
                                        sling:resourceType="granite/ui/components/coral/foundation/form/hidden"

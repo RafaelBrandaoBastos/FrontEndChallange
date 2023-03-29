@@ -6,7 +6,7 @@ export const InputU = styled.input`
 width: 379px;
 height: 60px;
 background: #26292C;
-border: 1px solid #FFFFFF; 
+border: 1px solid ${({ucolor}) => ucolor}; 
 border-radius: 50px;
 color: ${({ucolor}) => ucolor};
 font-family: 'Poppins'
@@ -46,7 +46,7 @@ export const InputP = styled.input`
 width: 379px;
 height: 60px;
 background: #26292C;
-border: 1px solid #FFFFFF; 
+border: 1px solid ${({pcolor}) => pcolor}; 
 border-radius: 50px;
 font-family: 'Poppins';
 font-style: normal;
