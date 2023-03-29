@@ -32,9 +32,6 @@ export const LoginForm = styled.form`
         width: 82%;
         align-items: center;
     }
-    @media (max-height: 500px) {
-        height: 90%;
-    }
 `;
 
 

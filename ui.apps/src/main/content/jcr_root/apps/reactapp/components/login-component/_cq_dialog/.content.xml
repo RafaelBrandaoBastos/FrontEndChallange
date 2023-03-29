@@ -48,6 +48,25 @@
                           jcr:primaryType="nt:unstructured"
                           name="./titleSize"
                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <titlefont cq-msm-lockable="./titlefont"
+                          defaultValue="poppins"
+                          fieldLabel="Fonte para o título"
+                          jcr:primaryType="nt:unstructured"
+                          name="./titlefont"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                          value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </titlefont>
                <subTitle cq-msm-lockable="./subTitle"
                          fieldLabel="Digite o conteúdo do Subtítulo"
                          jcr:primaryType="nt:unstructured"
@@ -63,6 +82,25 @@
                              jcr:primaryType="nt:unstructured"
                              name="./subTitleSize"
                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subtitlefont cq-msm-lockable="./subtitlefont"
+                             defaultValue="poppins"
+                             fieldLabel="Fonte para o subtítulo"
+                             jcr:primaryType="nt:unstructured"
+                             name="./subtitlefont"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                             value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </subtitlefont>
                <text cq-msm-lockable="./text"
                      fieldLabel="Digite o conteúdo do texto"
                      jcr:primaryType="nt:unstructured"
@@ -78,6 +116,25 @@
                          jcr:primaryType="nt:unstructured"
                          name="./textSize"
                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <textfont cq-msm-lockable="./textfont"
+                         defaultValue="poppins"
+                         fieldLabel="Fonte para o texto"
+                         jcr:primaryType="nt:unstructured"
+                         name="./textfont"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                         value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </textfont>
                <label cq-msm-lockable="./label"
                       fieldLabel="Digite uma label para o botão"
                       jcr:primaryType="nt:unstructured"
@@ -98,6 +155,25 @@
                             jcr:primaryType="nt:unstructured"
                             name="./buttonColor"
                             sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+               <labelfont cq-msm-lockable="./labelfont"
+                          defaultValue="poppins"
+                          fieldLabel="Fonte para a label"
+                          jcr:primaryType="nt:unstructured"
+                          name="./labelfont"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                          value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </labelfont>
                <inputUser cq-msm-lockable="./inputUser"
                           fieldLabel="Digite o conteúdo do input User"
                           jcr:primaryType="nt:unstructured"

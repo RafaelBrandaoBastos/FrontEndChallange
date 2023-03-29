@@ -55,6 +55,48 @@
               "json-expose": true,
               "json-property": "titleSize"
             },
+            {
+              "field": "titlefont",
+              "type": "select",
+              "label": "Fonte para o título",
+              "json-expose": true,
+              "json-property": "titlefont",
+              "attributes": {
+                  "defaultValue": "poppins",
+                  "value": false
+              },
+              "items": [
+                  {
+                      "field": "nunito",
+                      "attributes": {
+                          "text": "Nunito",
+                          "value": "Nunito"
+                      }
+                  },
+                  {
+                      "field": "inter",
+                      "attributes": {
+                          "selected": "true",
+                          "text": "Inter",
+                          "value": "Inter"
+                      }
+                  },
+                  {
+                      "field": "montserrat",
+                      "attributes": {
+                          "text": "Montserrat",
+                          "value": "Montserrat"
+                      }
+                  },
+                  {
+                      "field": "poppins",
+                      "attributes": {
+                          "text": "Poppins",
+                          "value": "Poppins"
+                      }
+                  }
+              ]
+          },
 
 
 
@@ -80,6 +122,48 @@
               "json-expose": true,
               "json-property": "subTitleSize"
             },
+            {
+              "field": "subtitlefont",
+              "type": "select",
+              "label": "Fonte para o subtítulo",
+              "json-expose": true,
+              "json-property": "subtitlefont",
+              "attributes": {
+                  "defaultValue": "poppins",
+                  "value": false
+              },
+              "items": [
+                  {
+                      "field": "nunito",
+                      "attributes": {
+                          "text": "Nunito",
+                          "value": "Nunito"
+                      }
+                  },
+                  {
+                      "field": "inter",
+                      "attributes": {
+                          "selected": "true",
+                          "text": "Inter",
+                          "value": "Inter"
+                      }
+                  },
+                  {
+                      "field": "montserrat",
+                      "attributes": {
+                          "text": "Montserrat",
+                          "value": "Montserrat"
+                      }
+                  },
+                  {
+                      "field": "poppins",
+                      "attributes": {
+                          "text": "Poppins",
+                          "value": "Poppins"
+                      }
+                  }
+              ]
+          },
 
 
 
@@ -106,6 +190,48 @@
               "json-expose": true,
               "json-property": "textSize"
             },
+            {
+              "field": "textfont",
+              "type": "select",
+              "label": "Fonte para o texto",
+              "json-expose": true,
+              "json-property": "textfont",
+              "attributes": {
+                  "defaultValue": "poppins",
+                  "value": false
+              },
+              "items": [
+                  {
+                      "field": "nunito",
+                      "attributes": {
+                          "text": "Nunito",
+                          "value": "Nunito"
+                      }
+                  },
+                  {
+                      "field": "inter",
+                      "attributes": {
+                          "selected": "true",
+                          "text": "Inter",
+                          "value": "Inter"
+                      }
+                  },
+                  {
+                      "field": "montserrat",
+                      "attributes": {
+                          "text": "Montserrat",
+                          "value": "Montserrat"
+                      }
+                  },
+                  {
+                      "field": "poppins",
+                      "attributes": {
+                          "text": "Poppins",
+                          "value": "Poppins"
+                      }
+                  }
+              ]
+          },
 
 
 
@@ -138,6 +264,48 @@
               "json-expose": true,
               "json-property": "buttonColor"
             },
+            {
+              "field": "labelfont",
+              "type": "select",
+              "label": "Fonte para a label",
+              "json-expose": true,
+              "json-property": "labelfont",
+              "attributes": {
+                  "defaultValue": "poppins",
+                  "value": false
+              },
+              "items": [
+                  {
+                      "field": "nunito",
+                      "attributes": {
+                          "text": "Nunito",
+                          "value": "Nunito"
+                      }
+                  },
+                  {
+                      "field": "inter",
+                      "attributes": {
+                          "selected": "true",
+                          "text": "Inter",
+                          "value": "Inter"
+                      }
+                  },
+                  {
+                      "field": "montserrat",
+                      "attributes": {
+                          "text": "Montserrat",
+                          "value": "Montserrat"
+                      }
+                  },
+                  {
+                      "field": "poppins",
+                      "attributes": {
+                          "text": "Poppins",
+                          "value": "Poppins"
+                      }
+                  }
+              ]
+          },
 
 
 

@@ -42,6 +42,9 @@ public interface LoginComponent
     @JsonProperty("titleSize")
     String getTitleSize();
 
+    @JsonProperty("titlefont")
+    String getTitlefont();
+
     @JsonProperty("subTitle")
     String getSubTitle();
 
@@ -51,6 +54,9 @@ public interface LoginComponent
     @JsonProperty("subTitleSize")
     String getSubTitleSize();
 
+    @JsonProperty("subtitlefont")
+    String getSubtitlefont();
+
     @JsonProperty("text")
     String getText();
 
@@ -59,6 +65,9 @@ public interface LoginComponent
 
     @JsonProperty("textSize")
     String getTextSize();
+
+    @JsonProperty("textfont")
+    String getTextfont();
 
     @JsonProperty("label")
     String getLabel();
@@ -71,6 +80,9 @@ public interface LoginComponent
 
     @JsonProperty("buttonColor")
     String getButtonColor();
+
+    @JsonProperty("labelfont")
+    String getLabelfont();
 
     @JsonProperty("inputUser")
     String getInputUser();

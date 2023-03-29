@@ -6,14 +6,14 @@ export const InputU = styled.input`
 width: 379px;
 height: 60px;
 background: #26292C;
-border: 1px solid #FFFFFF; 
+border: 1px solid ${({ucolor}) => ucolor}; 
 border-radius: 50px;
-font-family: 'Poppins';
+color: ${({ucolor}) => ucolor};
+font-family: 'Poppins'
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-color: #E0E0E0;
 padding-left: 4%;
 background-image: url(${VectorU});
 background-repeat: no-repeat;
@@ -38,7 +38,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-color: #E0E0E0;
+color: ${({ucolor}) => ucolor};
 }
 `;
 
@@ -46,14 +46,14 @@ export const InputP = styled.input`
 width: 379px;
 height: 60px;
 background: #26292C;
-border: 1px solid #FFFFFF; 
+border: 1px solid ${({pcolor}) => pcolor}; 
 border-radius: 50px;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-color: #E0E0E0;
+color: ${({pcolor}) => pcolor};
 padding-left: 4%;
 background-image: url(${VectorP});
 background-repeat: no-repeat;
@@ -77,6 +77,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-color: #E0E0E0;
+color: ${({pcolor}) => pcolor};
 }
 `;

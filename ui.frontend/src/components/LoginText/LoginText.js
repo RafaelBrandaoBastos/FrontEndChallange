@@ -2,21 +2,47 @@ import React from 'react'
 import {CustomTitle, CustomText, CustomSubTitle} from'./style.js'
 import { MapTo } from '@adobe/aem-react-editable-components';
 
-const Text = (props) => {
-        if(props.type == "title"){
+const Text = ({
+    titlefont,
+    titleColor,
+    titleSize,
+    title,
+    subtitlefont,
+    subTitleColor,
+    subTitleSize,
+    subtitle,
+    textfont,
+    textColor,
+    textSize,
+    text,
+    type
+}) => {
+        if(type == "title"){
             return (
-                <CustomTitle titlecolor={props.titleColor} titlesize={props.titleSize}>{props.title}</CustomTitle>       
+                <CustomTitle font = {titlefont} titlecolor={titleColor} titlesize={titleSize}>{title}</CustomTitle>       
             )       
         }
-        if(props.type == "subtitle"){
+        if(type == "subtitle"){
             return (
-                <CustomSubTitle subtitlecolor={props.subTitleColor} subtitlesize={props.subTitleSize}>{props.subtitle}</CustomSubTitle>       
+                <CustomSubTitle font = {subtitlefont} subtitlecolor={subTitleColor} subtitlesize={subTitleSize}>{subtitle}</CustomSubTitle>       
             )       
         }
-        if(props.type == "text"){
+        if(type == "text"){
             return (
-                <CustomText textcolor={props.textColor} textsize={props.textSize}>{props.text}</CustomText>       
+                <CustomText font = {textfont} textcolor={textColor} textsize={textSize}>{text}</CustomText>       
             )       
         }
         
-}; export default MapTo("reactapp/components/logintext-component")(Text);
+}; 
+Text.defaultProps = {  
+            title: "Olá",
+            titleSize: "60px",
+            titleColor: "#E0E0E0",
+            subtitle: "Login",
+            subTitleSize: "30px",
+            subTitleColor: "#E0E0E0",
+            text: "Para continuar navegando de forma segura, efetue o login na rede.",
+            textSize: "16px",
+            textColor: "#E0E0E0",
+}; 
+export default MapTo("reactapp/components/logintext-component")(Text);
