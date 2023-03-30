@@ -2,15 +2,15 @@ import React from 'react'
 import {BtnAccess,BtnLogout} from'./style.js'
 import { MapTo } from '@adobe/aem-react-editable-components';
 
-const HomeButton = ({type, afont, acolor, alcolor, asize, atext, lfont, lcolor, llcolor, lsize, ltext}) => {
+const HomeButton = ({type, afont, acolor, alcolor, asize, atext, lfont, lcolor, llcolor, lsize, ltext, onClick}) => {
     if (type == "access") {
         return (
-            <BtnAccess  font = {afont} color={acolor} labelcolor={alcolor} labelsize={asize}>{atext}</BtnAccess>       
+            <BtnAccess onClick={onClick} font = {afont} color={acolor} labelcolor={alcolor} labelsize={asize}>{atext}</BtnAccess>       
         )  
     }
     if (type == "logout") {
         return (
-            <BtnLogout font = {lfont} color={lcolor} labelcolor={llcolor} labelsize={lsize}>{ltext}</BtnLogout>       
+            <BtnLogout onClick={onClick} font = {lfont} color={lcolor} labelcolor={llcolor} labelsize={lsize}>{ltext}</BtnLogout>       
         )  
     }
 }; 

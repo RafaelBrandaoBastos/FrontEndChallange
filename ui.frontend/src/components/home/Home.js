@@ -46,7 +46,7 @@ const Home = ({
   clockFont
 }) => {
 
-  const [countdown, setCountdown] = useState(600);
+  const [countdown, setCountdown] = useState(6000);
   const [startCountdown, setStartCountdown] = useState(false);
   const history = useHistory();
 
@@ -65,6 +65,17 @@ const Home = ({
       return;
     }
   }, [countdown]);
+
+  const logout = (event) => {
+    event.preventDefault();
+    history.push("/content/reactapp/us/en/home.html");
+    localStorage.clear("userData.user");
+    localStorage.clear("userData.password");  
+  }
+  const acess = (event) => {
+    event.preventDefault();
+    history.push("/content/reactapp/us/en/search.html");
+  }
   return (
     <>
       <Container>
@@ -91,8 +102,8 @@ const Home = ({
           <Text type = {"footer"} ffont = {footerFont} fcolor={footerColor} fsize={footerSize} footer={footer}/> 
           <Timer countdown={countdown} />
           <ButtonContainer>
-            <HomeButton afont = {labelFontAccess} type={"access"} atext={labelAccess} acolor={buttonColorAccess} alcolor={labelColorAccess} asize={labelSizeAccess}/>
-            <HomeButton  lfont = {labelFontLogout} type={"logout"} ltext={labelLogout} lcolor={buttonColorLogout} llcolor={labelColorLogout} lsize={labelSizeLogout}/>
+            <HomeButton onClick={acess} afont = {labelFontAccess} type={"access"} atext={labelAccess} acolor={buttonColorAccess} alcolor={labelColorAccess} asize={labelSizeAccess}/>
+            <HomeButton onClick={logout} lfont = {labelFontLogout} type={"logout"} ltext={labelLogout} lcolor={buttonColorLogout} llcolor={labelColorLogout} lsize={labelSizeLogout}/>
         </ButtonContainer>
         </Footer>
       </Container>
