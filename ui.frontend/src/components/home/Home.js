@@ -2,8 +2,8 @@ import { MapTo } from "@adobe/aem-react-editable-components";
 import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import React, { useState, useEffect } from "react";
-{/*import Text from "../HomeText/HomeText";
-import Timer from "../HomeTimer/HomeTimer";*/}
+import Text from "../HomeText/HomeText";
+{/*import Timer from "../HomeTimer/HomeTimer";*/}
 import HomeButton from "../HomeButton/HomeButton";
 import { Container, Header, Footer, SubContainer, Img, Logo, TextContainer, ButtonContainer} from "./style";
 
@@ -77,14 +77,14 @@ const Home = ({
             alt='ImageComponent'
           />
           <TextContainer>
-            {/*<Text type = {"subtitle"} sfont = {subtitleFont} scolor={subTitleColor} ssize={subTitleSize} subtitle={subTitle}/> 
+            <Text type = {"subtitle"} sfont = {subtitleFont} scolor={subTitleColor} ssize={subTitleSize} subtitle={subTitle}/> 
             <Text type = {"text1"} tfont = {textFont} tcolor={textColor} tsize={textSize} text1={text1}/>   
             <Text type = {"title1"} Tfont = {titleFont} Tcolor={titleColor} Tsize={titleSize} title1={title1}/>  
             <Text type = {"text2"} tfont = {textFont} tcolor={textColor} tsize={textSize} text2={text2}/>  
             <Text type = {"title2"} Tfont = {titleFont} Tcolor={titleColor} Tsize={titleSize} title2={title2}/> 
             <Text type = {"text3"} tfont = {textFont} tcolor={textColor} tsize={textSize} text3={text3}/>  
             <Text type = {"title3"} Tfont = {titleFont} Tcolor={titleColor} Tsize={titleSize} title3={title3}/> 
-            <Text type = {"text4"} tfont = {textFont} tcolor={textColor} tsize={textSize} text4={text4}/>   */}
+            <Text type = {"text4"} tfont = {textFont} tcolor={textColor} tsize={textSize} text4={text4}/>
           </TextContainer>
         </SubContainer>
         <Footer>
