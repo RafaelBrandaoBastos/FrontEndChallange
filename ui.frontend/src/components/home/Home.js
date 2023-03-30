@@ -3,8 +3,8 @@ import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import React, { useState, useEffect } from "react";
 {/*import Text from "../HomeText/HomeText";
+import Timer from "../HomeTimer/HomeTimer";*/}
 import HomeButton from "../HomeButton/HomeButton";
-import Timer from "../HomeTimer/HomeTimer";*/};
 import { Container, Header, Footer, SubContainer, Img, Logo, TextContainer, ButtonContainer} from "./style";
 
 
@@ -90,10 +90,10 @@ const Home = ({
         <Footer>
           {/*<Text type = {"footer"} ffont = {footerFont} fcolor={footerColor} fsize={footerSize} footer={footer}/> 
           <Timer countdown={countdown} />*/}
-          {/*<ButtonContainer>
+          <ButtonContainer>
             <HomeButton afont = {labelFontAccess} type={"access"} atext={labelAccess} acolor={buttonColorAccess} alcolor={labelColorAccess} asize={labelSizeAccess}/>
             <HomeButton  lfont = {labelFontLogout} type={"logout"} ltext={labelLogout} lcolor={buttonColorLogout} llcolor={labelColorLogout} lsize={labelSizeLogout}/>
-        </ButtonContainer>*/}
+        </ButtonContainer>
         </Footer>
       </Container>
     </>
