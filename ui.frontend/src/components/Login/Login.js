@@ -1,7 +1,7 @@
 import { MapTo } from '@adobe/aem-react-editable-components';
 import { useHistory } from 'react-router-dom'; 
 import {useForm} from "react-hook-form";
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import {Container, Img, Logo, LogoContainer, SubContainer, LoginForm, ErrorMessage} from "./style";
 import LoginButton from "../LoginButton/LoginButton";
 import Text from "../LoginText/LoginText";
@@ -34,7 +34,7 @@ const Login = ({
 }) => {
         
     const {register, handleSubmit, formState: { errors }} =  useForm();
-    const history = useHistory()
+    const history = useHistory();
     
 
     useEffect(() => {    

@@ -2,76 +2,68 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     justify-content: flex-end;
-    position: relative;
-    display: flex;
+    display: block;
     width: 100vw;
     height: 100vh;   
 `;
 
 export const SubContainer = styled.div`
     display: flex;
-    width: 50%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(#33383D, #1C1D20);
-    @media (max-width: 768px) {
-        width: 100%;
-    }   
-`;
-
-export const LoginForm = styled.form`
-    display: flex;
-    width: 380px;
-    height: 80%;
-    max-height: 650px;
+    align-items: flex-end;
     justify-content: space-between;
-    align-items: flex-start; 
-    flex-direction: column; 
-    @media (max-width: 400px) {
-        width: 82%;
-        align-items: center;
-    }
+    padding-right: 5%;
+    height: 70%;
+    width: 100%;
+`;
+export const TextContainer= styled.div`
+    display: block;
+    align-items: flex-start;
+    width: 60%;
+    height: 100%;
+`;
+export const ButtonContainer= styled.div`
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 300px;
+    @media (max-width: 1530px) {
+        width: 100%;  
+    } 
+`;
+export const Header = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+`;
+export const Footer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);  
 `;
 
 
 export const Img = styled.img`
-    object-fit: cover;
-    width: 50%;
-    height: 100vh;
-    position: relative;
+    width: auto;
+    height: 75%;
     @media (max-width: 768px) {
-        display: none;
+        max-width: 100%;
+        max-height: 75%;
+        height: auto; 
     } 
 `;
 
 
 export const Logo = styled.img`
-    display: flex;
-    height: auto;
-    @media (max-width: 400px) {
-        width 100%; 
+    height: 50%;
+    width: auto;
+    @media (max-width: 768px) {
+        max-width: 100%;
+        max-height: 50%;
+        height: auto;
     }
 `;
 
-export const LogoContainer = styled.div`
-    position: absolute;
-    display: flex;
-    justify-content: center; 
-    width 50%;
-    height: auto;
-    @media (max-width: 768px) {
-        width 100%; 
-        padding-right: 90px;   
-    } 
-`;
-export const ErrorMessage = styled.span`
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-color: #E9B425;
-margin: auto;
-`;
