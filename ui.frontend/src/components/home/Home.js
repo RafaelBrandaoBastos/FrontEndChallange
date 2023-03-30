@@ -2,7 +2,9 @@ import { MapTo } from "@adobe/aem-react-editable-components";
 import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import React, { useState, useEffect } from "react";
-
+{/*import Text from "../HomeText/HomeText";
+import HomeButton from "../HomeButton/HomeButton";
+import Timer from "../HomeTimer/HomeTimer";*/};
 import { Container, Header, Footer, SubContainer, Img, Logo, TextContainer, ButtonContainer} from "./style";
 
 
@@ -67,13 +69,13 @@ const Home = ({
     <>
       <Container>
         <Header>
-          {/*<Logo src={logoImage && logoImage.src} alt='LogoComponent' />*/}
+          <Logo src={logoImage && logoImage.src} alt='LogoComponent' />
         </Header>
         <SubContainer>
-          {/*<Img
+          <Img
             src={backgroundImage && backgroundImage.src}
             alt='ImageComponent'
-  />*/}
+          />
           <TextContainer>
             {/*<Text type = {"subtitle"} sfont = {subtitleFont} scolor={subTitleColor} ssize={subTitleSize} subtitle={subTitle}/> 
             <Text type = {"text1"} tfont = {textFont} tcolor={textColor} tsize={textSize} text1={text1}/>   
