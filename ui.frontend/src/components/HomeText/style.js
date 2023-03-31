@@ -50,7 +50,7 @@ export const CustomFooter= styled.p`
   font-weight: 400;
   line-height: 18px;
   text-align: right;
-  max-width: 650px;
+  max-width: 680px;
   margin-left: 30%;
   @media (max-width: 1530px) {   
     display: none;
