@@ -1,7 +1,7 @@
 import { MapTo } from '@adobe/aem-react-editable-components';
 import { useHistory } from 'react-router-dom'; 
 import {useForm} from "react-hook-form";
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import {Container, Img, Logo, LogoContainer, SubContainer, LoginForm, ErrorMessage} from "./style";
 import LoginButton from "../LoginButton/LoginButton";
 import Text from "../LoginText/LoginText";
@@ -34,13 +34,13 @@ const Login = ({
 }) => {
         
     const {register, handleSubmit, formState: { errors }} =  useForm();
-    const history = useHistory()
+    const history = useHistory();
     
 
     useEffect(() => {    
-        if(localStorage.getItem("userData.user") != null && localStorage.getItem("userData.password") !=null) {  
+        if(localStorage.getItem("user.user") != null && localStorage.getItem("user.password") !=null) {  
             setTimeout(() => {{
-            if(localStorage.getItem("userData.user") != null && localStorage.getItem("userData.password") !=null) { 
+            if(localStorage.getItem("user.user") != null && localStorage.getItem("user.password") !=null) { 
                 console.log("NextPage");
                 history.push("/content/reactapp/us/en/home0.html");
             }}}, 5500);

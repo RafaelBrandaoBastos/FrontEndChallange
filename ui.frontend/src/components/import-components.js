@@ -13,16 +13,14 @@
  ~ See the License for the specific language governing permissions and
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-import withAsyncImport from "../utils/withAsyncImport";
+ import withAsyncImport from "../utils/withAsyncImport";
 
-import "./Page/Page";
-import "./Container/Container";
-import "./ExperienceFragment/ExperienceFragment";
-import './Login/Login';
-import './LoginButton/LoginButton';
-import "./LoginText/LoginText";
-import "./LoginInput/LoginInput";
-
+ import "./Page/Page";
+ import "./Container/Container";
+ import "./ExperienceFragment/ExperienceFragment";
+ import './Home/Home';
+ import './Login/Login';
+ 
 import { MapTo } from "@adobe/aem-react-editable-components";
 
 import { CarouselV1IsEmptyFn } from "@adobe/aem-core-components-react-spa/dist/isEmptyFunctions";

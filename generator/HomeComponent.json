@@ -28,11 +28,25 @@
     "generic-javadoc": false,
     "properties": [
       {
-        "field": "title",
+        "field": "title1",
         "type": "textfield",
-        "label": "Digite o conteúdo do Título",
+        "label": "Digite o conteúdo do Título 1",
         "json-expose": true,
-        "json-property": "title"
+        "json-property": "title1"
+      },
+      {
+        "field": "title2",
+        "type": "textfield",
+        "label": "Digite o conteúdo do Título 2",
+        "json-expose": true,
+        "json-property": "title2"
+      },
+      {
+        "field": "title3",
+        "type": "textfield",
+        "label": "Digite o conteúdo do Título 3",
+        "json-expose": true,
+        "json-property": "title3"
       },
       {
         "field": "titleColor",
@@ -177,7 +191,7 @@
         "json-property": "subTitleSize"
       },
       {
-        "field": "subtitleFont",
+        "field": "subitleFont",
         "type": "select",
         "label": "Fonte para o subtítulo",
         "json-expose": true,
@@ -220,11 +234,32 @@
       },
 
       {
-        "field": "text",
+        "field": "text1",
         "type": "textfield",
-        "label": "Digite o conteúdo do texto",
+        "label": "Digite o conteúdo do texto 1",
         "json-expose": true,
-        "json-property": "text"
+        "json-property": "text1"
+      },
+      {
+        "field": "text2",
+        "type": "textfield",
+        "label": "Digite o conteúdo do texto 2",
+        "json-expose": true,
+        "json-property": "text2"
+      },
+      {
+        "field": "text3",
+        "type": "textfield",
+        "label": "Digite o conteúdo do texto 3",
+        "json-expose": true,
+        "json-property": "text3"
+      },
+      {
+        "field": "text4",
+        "type": "textfield",
+        "label": "Digite o conteúdo do texto 4",
+        "json-expose": true,
+        "json-property": "text4"
       },
       {
         "field": "textColor",
