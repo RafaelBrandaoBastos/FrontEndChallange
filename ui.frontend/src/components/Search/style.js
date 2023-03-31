@@ -15,19 +15,21 @@ export const SubContainer = styled.div`
     justify-content: center;
     align-items: center;
     background: linear-gradient(#33383D, #1C1D20);
-    @media (max-width: 768px) {
+    @media (max-width: 1400px) {
         width: 100%;
     }   
 `;
 
 export const LoginForm = styled.form`
     display: flex;
-    width: 380px;
+    width: 70%;
     height: 80%;
     max-height: 650px;
+    padding-left: 50px;
     justify-content: space-between;
     align-items: flex-start; 
     flex-direction: column; 
+    outline-style: solid;
     @media (max-width: 400px) {
         width: 82%;
         align-items: center;
@@ -43,7 +45,7 @@ export const Img = styled.img`
     width: 30%;
     height: 100vh;
     position: relative;
-    @media (max-width: 768px) {
+    @media (max-width: 1400px) {
         display: none;
     } 
 `;
@@ -61,7 +63,7 @@ export const LogoContainer = styled.div`
     align-items: center; 
     width 30%;
     height: 20%;
-    @media (max-width: 768px) {
+    @media (max-width: 1400px) {
         display: none;    
     } 
 `;
