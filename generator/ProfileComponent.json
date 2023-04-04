@@ -1,0 +1,490 @@
+{
+  "project-settings": {
+    "code-owner": "React App",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "reactapp",
+    "model-interface-pkg": "com.reactapp.core.models",
+    "model-impl-pkg": "com.reactapp.core.models.impl"
+  },
+  "name": "profile-component",
+  "title": "Profile Component",
+  "field": "profile",
+  "group": "React App - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": ["request"],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "title",
+        "type": "textfield",
+        "label": "Digite o conteúdo do Título",
+        "json-expose": true,
+        "json-property": "title"
+      },
+      {
+        "field": "titleColor",
+        "label": "Cor do Título",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleColor"
+      },
+      {
+        "field": "titleSize",
+        "type": "textfield",
+        "label": "Digite um tamanho do Título em px",
+        "json-expose": true,
+        "json-property": "titleSize"
+      },
+      {
+        "field": "titlefont",
+        "type": "select",
+        "label": "Fonte para o título",
+        "json-expose": true,
+        "json-property": "titlefont",
+        "attributes": {
+          "defaultValue": "poppins",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "nunito",
+            "attributes": {
+              "text": "Nunito",
+              "value": "Nunito"
+            }
+          },
+          {
+            "field": "inter",
+            "attributes": {
+              "selected": "true",
+              "text": "Inter",
+              "value": "Inter"
+            }
+          },
+          {
+            "field": "montserrat",
+            "attributes": {
+              "text": "Montserrat",
+              "value": "Montserrat"
+            }
+          },
+          {
+            "field": "poppins",
+            "attributes": {
+              "text": "Poppins",
+              "value": "Poppins"
+            }
+          }
+        ]
+      },
+      {
+        "field": "subtitle",
+        "type": "textfield",
+        "label": "Digite o conteúdo do subtítulo",
+        "json-expose": true,
+        "json-property": "subtitle"
+      },
+      {
+        "field": "subtitleColor",
+        "label": "Cor do subtítulo",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "subtitleColor"
+      },
+      {
+        "field": "subtitleSize",
+        "type": "textfield",
+        "label": "Digite um tamanho do subtítulo em px",
+        "json-expose": true,
+        "json-property": "subtitleSize"
+      },
+      {
+        "field": "subtitlefont",
+        "type": "select",
+        "label": "Fonte para o subtítulo",
+        "json-expose": true,
+        "json-property": "subtitlefont",
+        "attributes": {
+          "defaultValue": "poppins",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "nunito",
+            "attributes": {
+              "text": "Nunito",
+              "value": "Nunito"
+            }
+          },
+          {
+            "field": "inter",
+            "attributes": {
+              "selected": "true",
+              "text": "Inter",
+              "value": "Inter"
+            }
+          },
+          {
+            "field": "montserrat",
+            "attributes": {
+              "text": "Montserrat",
+              "value": "Montserrat"
+            }
+          },
+          {
+            "field": "poppins",
+            "attributes": {
+              "text": "Poppins",
+              "value": "Poppins"
+            }
+          }
+        ]
+      },
+      { 
+        "field": "subtitle",
+        "type": "textfield",
+        "label": "Digite o conteúdo do subtítulo",
+        "json-expose": true,
+        "json-property": "subtitle"
+      },
+      {
+        "field": "subtitleColor",
+        "label": "Cor do subtítulo",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "subtitleColor"
+      },
+      {
+        "field": "subtitleSize",
+        "type": "textfield",
+        "label": "Digite um tamanho do subtítulo em px",
+        "json-expose": true,
+        "json-property": "subtitleSize"
+      },
+      {
+        "field": "subtitlefont",
+        "type": "select",
+        "label": "Fonte para o subtítulo",
+        "json-expose": true,
+        "json-property": "subtitlefont",
+        "attributes": {
+          "defaultValue": "poppins",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "nunito",
+            "attributes": {
+              "text": "Nunito",
+              "value": "Nunito"
+            }
+          },
+          {
+            "field": "inter",
+            "attributes": {
+              "selected": "true",
+              "text": "Inter",
+              "value": "Inter"
+            }
+          },
+          {
+            "field": "montserrat",
+            "attributes": {
+              "text": "Montserrat",
+              "value": "Montserrat"
+            }
+          },
+          {
+            "field": "poppins",
+            "attributes": {
+              "text": "Poppins",
+              "value": "Poppins"
+            }
+          }
+        ]
+      },
+
+      { 
+        "field": "subtitle2",
+        "type": "textfield",
+        "label": "Digite o conteúdo do subtítulo 2",
+        "json-expose": true,
+        "json-property": "subtitle2"
+      },
+      {
+        "field": "subtitle2Color",
+        "label": "Cor do subtítulo 2",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "subtitle2Color"
+      },
+      {
+        "field": "subtitle2Size",
+        "type": "textfield",
+        "label": "Digite um tamanho do subtítulo 2 em px",
+        "json-expose": true,
+        "json-property": "subtitle2Size"
+      },
+      {
+        "field": "subtitle2font",
+        "type": "select",
+        "label": "Fonte para o subtítulo 2",
+        "json-expose": true,
+        "json-property": "subtitle2font",
+        "attributes": {
+          "defaultValue": "poppins",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "nunito",
+            "attributes": {
+              "text": "Nunito",
+              "value": "Nunito"
+            }
+          },
+          {
+            "field": "inter",
+            "attributes": {
+              "selected": "true",
+              "text": "Inter",
+              "value": "Inter"
+            }
+          },
+          {
+            "field": "montserrat",
+            "attributes": {
+              "text": "Montserrat",
+              "value": "Montserrat"
+            }
+          },
+          {
+            "field": "poppins",
+            "attributes": {
+              "text": "Poppins",
+              "value": "Poppins"
+            }
+          }
+        ]
+      },
+      
+      {
+        "field": "text",
+        "type": "textfield",
+        "label": "Digite o conteúdo do texto",
+        "json-expose": true,
+        "json-property": "text"
+      },
+      {
+        "field": "textColor",
+        "label": "Cor do texto",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "textColor"
+      },
+      {
+        "field": "textSize",
+        "type": "textfield",
+        "label": "Digite um tamanho do texto em px",
+        "json-expose": true,
+        "json-property": "textSize"
+      },
+      {
+        "field": "textfont",
+        "type": "select",
+        "label": "Fonte para o texto",
+        "json-expose": true,
+        "json-property": "textfont",
+        "attributes": {
+          "defaultValue": "poppins",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "nunito",
+            "attributes": {
+              "text": "Nunito",
+              "value": "Nunito"
+            }
+          },
+          {
+            "field": "inter",
+            "attributes": {
+              "selected": "true",
+              "text": "Inter",
+              "value": "Inter"
+            }
+          },
+          {
+            "field": "montserrat",
+            "attributes": {
+              "text": "Montserrat",
+              "value": "Montserrat"
+            }
+          },
+          {
+            "field": "poppins",
+            "attributes": {
+              "text": "Poppins",
+              "value": "Poppins"
+            }
+          }
+        ]
+      },
+
+      {
+        "field": "label",
+        "type": "textfield",
+        "label": "Digite uma label para o botão voltar",
+        "json-expose": true,
+        "json-property": "label"
+      },
+      {
+        "field": "labelColor",
+        "label": "Cor a label voltar",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelColor"
+      },
+      {
+        "field": "labelSize",
+        "type": "textfield",
+        "label": "Digite um tamanho da label voltar em px",
+        "json-expose": true,
+        "json-property": "labelSize"
+      },
+      {
+        "field": "buttonColor",
+        "label": "Cor do botão voltar",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "buttonColor"
+      },
+      {
+        "field": "labelfont",
+        "type": "select",
+        "label": "Fonte para a label voltar",
+        "json-expose": true,
+        "json-property": "labelfont",
+        "attributes": {
+          "defaultValue": "poppins",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "nunito",
+            "attributes": {
+              "text": "Nunito",
+              "value": "Nunito"
+            }
+          },
+          {
+            "field": "inter",
+            "attributes": {
+              "selected": "true",
+              "text": "Inter",
+              "value": "Inter"
+            }
+          },
+          {
+            "field": "montserrat",
+            "attributes": {
+              "text": "Montserrat",
+              "value": "Montserrat"
+            }
+          },
+          {
+            "field": "poppins",
+            "attributes": {
+              "text": "Poppins",
+              "value": "Poppins"
+            }
+          }
+        ]
+      },
+      {
+        "field": "labelshare",
+        "type": "textfield",
+        "label": "Digite uma label para o botão compartilhar",
+        "json-expose": true,
+        "json-property": "label"
+      },
+      {
+        "field": "labelshareColor",
+        "label": "Cor a label compartilhar",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelshareColor"
+      },
+      {
+        "field": "labelshareSize",
+        "type": "textfield",
+        "label": "Digite um tamanho da label compartilhar em px",
+        "json-expose": true,
+        "json-property": "labelshareSize"
+      },
+      {
+        "field": "buttonshareColor",
+        "label": "Cor do botão compartilhar",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "buttonshareColor"
+      },
+      {
+        "field": "labelsharefont",
+        "type": "select",
+        "label": "Fonte para a label de comportilhar",
+        "json-expose": true,
+        "json-property": "labelsharefont",
+        "attributes": {
+          "defaultValue": "poppins",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "nunito",
+            "attributes": {
+              "text": "Nunito",
+              "value": "Nunito"
+            }
+          },
+          {
+            "field": "inter",
+            "attributes": {
+              "selected": "true",
+              "text": "Inter",
+              "value": "Inter"
+            }
+          },
+          {
+            "field": "montserrat",
+            "attributes": {
+              "text": "Montserrat",
+              "value": "Montserrat"
+            }
+          },
+          {
+            "field": "poppins",
+            "attributes": {
+              "text": "Poppins",
+              "value": "Poppins"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

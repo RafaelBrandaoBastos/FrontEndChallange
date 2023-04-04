@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  React App CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2023 React App
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of React App and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to React App
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from React App.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Profile Component"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <layout jcr:primaryType="nt:unstructured"
+              margin="{Boolean}false"
+              sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+      <items jcr:primaryType="nt:unstructured">
+         <column jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+               <title cq-msm-lockable="./title"
+                      fieldLabel="Digite o conteúdo do Título"
+                      jcr:primaryType="nt:unstructured"
+                      name="./title"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <titleColor cq-msm-lockable="./titleColor"
+                           fieldLabel="Cor do Título"
+                           jcr:primaryType="nt:unstructured"
+                           name="./titleColor"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <titleSize cq-msm-lockable="./titleSize"
+                          fieldLabel="Digite um tamanho do Título em px"
+                          jcr:primaryType="nt:unstructured"
+                          name="./titleSize"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <titlefont cq-msm-lockable="./titlefont"
+                          defaultValue="poppins"
+                          fieldLabel="Fonte para o título"
+                          jcr:primaryType="nt:unstructured"
+                          name="./titlefont"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                          value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </titlefont>
+               <subtitle cq-msm-lockable="./subtitle"
+                         fieldLabel="Digite o conteúdo do subtítulo"
+                         jcr:primaryType="nt:unstructured"
+                         name="./subtitle"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subtitleColor cq-msm-lockable="./subtitleColor"
+                              fieldLabel="Cor do subtítulo"
+                              jcr:primaryType="nt:unstructured"
+                              name="./subtitleColor"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subtitleSize cq-msm-lockable="./subtitleSize"
+                             fieldLabel="Digite um tamanho do subtítulo em px"
+                             jcr:primaryType="nt:unstructured"
+                             name="./subtitleSize"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subtitlefont cq-msm-lockable="./subtitlefont"
+                             defaultValue="poppins"
+                             fieldLabel="Fonte para o subtítulo"
+                             jcr:primaryType="nt:unstructured"
+                             name="./subtitlefont"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                             value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </subtitlefont>
+               <subtitle cq-msm-lockable="./subtitle"
+                         fieldLabel="Digite o conteúdo do subtítulo"
+                         jcr:primaryType="nt:unstructured"
+                         name="./subtitle"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subtitleColor cq-msm-lockable="./subtitleColor"
+                              fieldLabel="Cor do subtítulo"
+                              jcr:primaryType="nt:unstructured"
+                              name="./subtitleColor"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subtitleSize cq-msm-lockable="./subtitleSize"
+                             fieldLabel="Digite um tamanho do subtítulo em px"
+                             jcr:primaryType="nt:unstructured"
+                             name="./subtitleSize"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subtitlefont cq-msm-lockable="./subtitlefont"
+                             defaultValue="poppins"
+                             fieldLabel="Fonte para o subtítulo"
+                             jcr:primaryType="nt:unstructured"
+                             name="./subtitlefont"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                             value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </subtitlefont>
+               <subtitle2 cq-msm-lockable="./subtitle2"
+                          fieldLabel="Digite o conteúdo do subtítulo 2"
+                          jcr:primaryType="nt:unstructured"
+                          name="./subtitle2"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subtitle2Color cq-msm-lockable="./subtitle2Color"
+                               fieldLabel="Cor do subtítulo 2"
+                               jcr:primaryType="nt:unstructured"
+                               name="./subtitle2Color"
+                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subtitle2Size cq-msm-lockable="./subtitle2Size"
+                              fieldLabel="Digite um tamanho do subtítulo 2 em px"
+                              jcr:primaryType="nt:unstructured"
+                              name="./subtitle2Size"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subtitle2font cq-msm-lockable="./subtitle2font"
+                              defaultValue="poppins"
+                              fieldLabel="Fonte para o subtítulo 2"
+                              jcr:primaryType="nt:unstructured"
+                              name="./subtitle2font"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                              value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </subtitle2font>
+               <text cq-msm-lockable="./text"
+                     fieldLabel="Digite o conteúdo do texto"
+                     jcr:primaryType="nt:unstructured"
+                     name="./text"
+                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <textColor cq-msm-lockable="./textColor"
+                          fieldLabel="Cor do texto"
+                          jcr:primaryType="nt:unstructured"
+                          name="./textColor"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <textSize cq-msm-lockable="./textSize"
+                         fieldLabel="Digite um tamanho do texto em px"
+                         jcr:primaryType="nt:unstructured"
+                         name="./textSize"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <textfont cq-msm-lockable="./textfont"
+                         defaultValue="poppins"
+                         fieldLabel="Fonte para o texto"
+                         jcr:primaryType="nt:unstructured"
+                         name="./textfont"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                         value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </textfont>
+               <label cq-msm-lockable="./label"
+                      fieldLabel="Digite uma label para o botão voltar"
+                      jcr:primaryType="nt:unstructured"
+                      name="./label"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <labelColor cq-msm-lockable="./labelColor"
+                           fieldLabel="Cor a label voltar"
+                           jcr:primaryType="nt:unstructured"
+                           name="./labelColor"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <labelSize cq-msm-lockable="./labelSize"
+                          fieldLabel="Digite um tamanho da label voltar em px"
+                          jcr:primaryType="nt:unstructured"
+                          name="./labelSize"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <buttonColor cq-msm-lockable="./buttonColor"
+                            fieldLabel="Cor do botão voltar"
+                            jcr:primaryType="nt:unstructured"
+                            name="./buttonColor"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <labelfont cq-msm-lockable="./labelfont"
+                          defaultValue="poppins"
+                          fieldLabel="Fonte para a label voltar"
+                          jcr:primaryType="nt:unstructured"
+                          name="./labelfont"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                          value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </labelfont>
+               <labelshare cq-msm-lockable="./labelshare"
+                           fieldLabel="Digite uma label para o botão compartilhar"
+                           jcr:primaryType="nt:unstructured"
+                           name="./labelshare"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <labelshareColor cq-msm-lockable="./labelshareColor"
+                                fieldLabel="Cor a label compartilhar"
+                                jcr:primaryType="nt:unstructured"
+                                name="./labelshareColor"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <labelshareSize cq-msm-lockable="./labelshareSize"
+                               fieldLabel="Digite um tamanho da label compartilhar em px"
+                               jcr:primaryType="nt:unstructured"
+                               name="./labelshareSize"
+                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <buttonshareColor cq-msm-lockable="./buttonshareColor"
+                                 fieldLabel="Cor do botão compartilhar"
+                                 jcr:primaryType="nt:unstructured"
+                                 name="./buttonshareColor"
+                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <labelsharefont cq-msm-lockable="./labelsharefont"
+                               defaultValue="poppins"
+                               fieldLabel="Fonte para a label de comportilhar"
+                               jcr:primaryType="nt:unstructured"
+                               name="./labelsharefont"
+                               sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                               value="false">
+                  <items jcr:primaryType="nt:unstructured">
+                     <nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                     <inter jcr:primaryType="nt:unstructured"
+                            selected="true"
+                            text="Inter"
+                            value="Inter"/>
+                     <montserrat jcr:primaryType="nt:unstructured"
+                                 text="Montserrat"
+                                 value="Montserrat"/>
+                     <poppins jcr:primaryType="nt:unstructured" text="Poppins" value="Poppins"/>
+                  </items>
+               </labelsharefont>
+            </items>
+         </column>
+      </items>
+   </content>
+</jcr:root>

@@ -106,10 +106,17 @@ export const UserText = styled.p`
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  /* identical to box height */
   display: flex;
   align-items: center;
   color: #ffffff;
+  @media (max-width: 768px) {
+    font-size: 16px;    
+    } 
+    @media (max-width: 400px) {
+        width: 89px;
+        height: 27px; 
+        font-size: 12px;    
+    } 
 `;
 
 export const List = styled.div`
@@ -134,7 +141,7 @@ export const ButtonVerMais = styled.button`
     border: 0px;
     width: 149px;
     height: 47px;
-    @media (max-width: 500px) {
+    @media (max-width: 768px) {
         width: 119px;
         height: 37px;    
     } 
@@ -142,6 +149,11 @@ export const ButtonVerMais = styled.button`
         width: 89px;
         height: 27px; 
         font-size: 14px;    
+    } 
+    @media (max-width: 350px) {
+        width: 89px;
+        height: 27px; 
+        font-size: 12px;    
     } 
 `;
 export const UserInfo = styled.div`
