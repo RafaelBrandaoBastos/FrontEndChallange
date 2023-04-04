@@ -7,6 +7,7 @@ background-image: url(${VectorS});
 background-repeat: no-repeat;
 background-position: 7em;
 background-size: 20px;
+position: relative;
 
   border: 0px;
   box-shadow: 0 1px 1px black;

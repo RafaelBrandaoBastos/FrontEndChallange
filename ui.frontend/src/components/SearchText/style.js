@@ -18,6 +18,7 @@ export const CustomText= styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  MARGIN-BOTTOM: 25PX;
 }
 `;
 
