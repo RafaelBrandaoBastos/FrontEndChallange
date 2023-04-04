@@ -20,6 +20,7 @@ import "./Container/Container";
 import "./ExperienceFragment/ExperienceFragment";
 import './Home/Home';
 import './Login/Login';
+import './Search/Search';
 
 import { MapTo } from "@adobe/aem-react-editable-components";
 
