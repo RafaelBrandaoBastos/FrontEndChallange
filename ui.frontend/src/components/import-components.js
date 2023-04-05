@@ -21,7 +21,6 @@ import "./ExperienceFragment/ExperienceFragment";
 import './Home/Home';
 import './Login/Login';
 import './Search/Search';
-import './Profile/Profile';
 
 import { MapTo } from "@adobe/aem-react-editable-components";
 

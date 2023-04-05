@@ -14,13 +14,14 @@ export const SubContainer = styled.div`
   height: 100vh;
   justify-content: center;
   align-items: center;
+  outline-style: solid;
+  outline-color: white;
   background: linear-gradient(#33383d, #1c1d20);
   @media (max-width: 1600px) {
     width: 100%;
   }
 `;
-
-export const LoginForm = styled.form`
+export const Busca = styled.div`
   display: flex;
   width: 80%;
   height: 85%;
@@ -34,6 +35,10 @@ export const LoginForm = styled.form`
     width: 90%;
     align-items: flex-start;
   }
+`;
+export const SearchForm = styled.form`
+  width: 100%;
+  height: 60%;
 `;
 
 export const InputContainer = styled.div`
@@ -162,4 +167,60 @@ export const UserInfo = styled.div`
   justify-content: flex-start;
   display: flex;
   align-items: center;
+`;
+
+export const PopUpContainer = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
+  width: 100vw;
+  height: 100vh;
+`;
+export const ProfileContainer = styled.div`
+position: relative;
+  display: block;
+  background-color: #242424;
+  width: 85%;
+  height: 75%;
+  max-width: 1608px;
+  max-height: 814px;
+  outline-style: solid;
+  outline-color: red;
+  @media (max-width: 768px) {
+    background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
+    padding-right: 0px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+`;
+export const Header = styled.div`
+  display: flex;
+  padding-right: 20px;
+  justify-content: flex-end;
+  align-items: center;
+    width: 100%;
+    height: 10%;
+
+`;
+export const ButtonVoltar = styled.button`
+    align-items: flex-start;
+    gap: 10px;
+    width: 136px;
+    height: 47px;
+    left: 1448px;
+    top: 24px;
+    background: linear-gradient(90deg, #0487FF 0%, #1665C1 100%);
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 50px;   
+    margin-top: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 `;
