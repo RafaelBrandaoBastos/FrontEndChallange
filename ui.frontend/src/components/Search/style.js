@@ -19,8 +19,7 @@ export const SubContainer = styled.div`
     width: 100%;
   }
 `;
-
-export const LoginForm = styled.form`
+export const Busca = styled.div`
   display: flex;
   width: 80%;
   height: 85%;
@@ -34,6 +33,10 @@ export const LoginForm = styled.form`
     width: 90%;
     align-items: flex-start;
   }
+`;
+export const SearchForm = styled.form`
+  width: 100%;
+  height: 60%;
 `;
 
 export const InputContainer = styled.div`
@@ -106,10 +109,17 @@ export const UserText = styled.p`
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  /* identical to box height */
   display: flex;
   align-items: center;
   color: #ffffff;
+  @media (max-width: 768px) {
+    font-size: 16px;    
+    } 
+    @media (max-width: 400px) {
+        width: 89px;
+        height: 27px; 
+        font-size: 12px;    
+    } 
 `;
 
 export const List = styled.div`
@@ -134,7 +144,7 @@ export const ButtonVerMais = styled.button`
     border: 0px;
     width: 149px;
     height: 47px;
-    @media (max-width: 500px) {
+    @media (max-width: 768px) {
         width: 119px;
         height: 37px;    
     } 
@@ -143,6 +153,11 @@ export const ButtonVerMais = styled.button`
         height: 27px; 
         font-size: 14px;    
     } 
+    @media (max-width: 350px) {
+        width: 89px;
+        height: 27px; 
+        font-size: 12px;    
+    } 
 `;
 export const UserInfo = styled.div`
   width: 50%;
@@ -150,4 +165,64 @@ export const UserInfo = styled.div`
   justify-content: flex-start;
   display: flex;
   align-items: center;
+`;
+
+export const PopUpContainer = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
+  width: 100vw;
+  height: 100vh;
+`;
+export const ProfileContainer = styled.div`
+  position: relative;
+  display: block;
+  background-color: #242424;
+  width: 85%;
+  height: 75%;
+  max-width: 1608px;
+  max-height: 814px;
+  @media (max-width: 1300px) {
+    background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
+    padding-right: 0px;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+  }
+`;
+export const Header = styled.div`
+  display: flex;
+  padding-right: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  @media (max-width: 1300px) {
+    justify-content: flex-start;
+  }
+
+`;
+export const ButtonVoltar = styled.button`
+    align-items: flex-start;
+    gap: 10px;
+    width: 136px;
+    height: 47px;
+    left: 1448px;
+    top: 24px;
+    background: linear-gradient(90deg, #0487FF 0%, #1665C1 100%);
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 50px;   
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @media (max-width: 1300px) {
+      width: 90px;
+      height: 37px;
+    }
 `;
