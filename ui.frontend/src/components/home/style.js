@@ -35,6 +35,7 @@ export const Header = styled.div`
     justify-content: space-between;
     width: 100%;
     height: 20%;
+    padding: 10px 20px 0 10px;
 `;
 export const Footer = styled.div`
     display: flex;

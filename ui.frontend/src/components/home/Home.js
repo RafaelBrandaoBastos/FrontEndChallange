@@ -5,6 +5,8 @@ import React, { useState, useEffect } from "react";
 import Text from "../HomeText/HomeText";
 import Timer from "../HomeTimer/HomeTimer";
 import HomeButton from "../HomeButton/HomeButton";
+import Weather from "../HomeWeather/Weather";
+import Clock from "../HomeClock/Clock";
 import { Container, Header, Footer, SubContainer, Img, Logo, TextContainer, ButtonContainer} from "./style";
 
 
@@ -81,6 +83,8 @@ const Home = ({
       <Container>
         <Header>
           <Logo src={logoImage && logoImage.src} alt='LogoComponent' />
+          <Clock />
+          <Weather />         
         </Header>
         <SubContainer>
           <Img
