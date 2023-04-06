@@ -14,8 +14,6 @@ export const SubContainer = styled.div`
   height: 100vh;
   justify-content: center;
   align-items: center;
-  outline-style: solid;
-  outline-color: white;
   background: linear-gradient(#33383d, #1c1d20);
   @media (max-width: 1600px) {
     width: 100%;
@@ -185,8 +183,6 @@ export const ProfileContainer = styled.div`
   height: 75%;
   max-width: 1608px;
   max-height: 814px;
-  outline-style: solid;
-  outline-color: red;
   @media (max-width: 1300px) {
     background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
     padding-right: 0px;

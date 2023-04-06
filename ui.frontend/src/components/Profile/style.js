@@ -19,11 +19,8 @@ export const Body = styled.div`
     display: block;
     width: 100%;
   }
-
 `;
 export const BioContainer = styled.div`
-  outline-style: solid;
-  outline-color: red;
   justify-content: center;
   align-items: flex-start;
   display: flex;
@@ -48,7 +45,6 @@ export const UserLogo = styled.img`
   }
 `;
 export const TextContainer = styled.div`
-  outline-style: solid;
   display: flex;
   flex-wrap: wrap;
   width: 70%;
@@ -66,7 +62,6 @@ export const TextContainer = styled.div`
 `;
 
 export const Title = styled.p`
-outline-style: solid;
   text-align: center;
   font-family: "Inter";
   font-style: normal;
@@ -81,11 +76,10 @@ outline-style: solid;
   @media (max-width: 1300px) {
     justify-content: flex-start;
     align-items: center;
-    font-size: 16px
+    font-size: 16px;
   }
 `;
 export const SubTitle = styled.p`
-outline-style: solid;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -103,7 +97,6 @@ outline-style: solid;
 `;
 
 export const ReposContainer = styled.div`
-  outline-style: solid;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -115,10 +108,14 @@ export const ReposContainer = styled.div`
     padding-left: 0px;
   }
 `;
+export const ButtonsContainer = styled.div`
+  display: block;
+  width: 100%;
+`;
 export const ButtonRepos = styled.button`
   width: 170px;
   height: 55px;
-  background: #2a2a2a;
+  background: #2a2a2a;s
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -175,32 +172,30 @@ export const Ball = styled.p`
   color: #ffffff;
   position: relative;
 `;
+
 export const Slide = styled.div`
+  display: flex;
   &.repos {
-    width: 200px;
-    height: 0px;
-    border: 2px solid rgba(159, 159, 159, 0.7)
-    left: 375px;
+    height: 3px;
+    width: 315px;
+    background: linear-gradient(
+      to right,
+      #9F9F9F 0%,
+      #9F9F9F 55%,
+      #2B2B2B 55%,
+      #2B2B2B 100%
+    );
   }
   &.fav {
-    width: 140px;
-    height: 0px;
-    border: 2px solid rgba(159, 159, 159, 0.7)
-    left: 578px;
-  }
-  @media (max-width: 1300px) {
-    &.repos {
-      width: 180px;
-      height: 0px;
-      border: 2px solid rgba(159, 159, 159, 0.7);
-      left: 0%;
-    }
-    &.fav {
-      width: 145px;
-      height: 0px;
-      border: 2px solid rgba(159, 159, 159, 0.7);
-      margin-left: 48%;
-    }  
+    height: 3px;
+    width: 315px;
+    background: linear-gradient(
+      to right,
+      #2B2B2B 0%,
+      #2B2B2B 55%,
+      #9F9F9F 55%,
+      #9F9F9F 100%
+    );
   }
 `;
 export const ReposList = styled.div`
@@ -225,48 +220,47 @@ export const Repos = styled.div`
 `;
 
 export const ReposTitle = styled.p`
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   width: 100%;
   font-size: 18px;
   line-height: 27px;
-  color: #FFFFFF;
-  `;
-
+  color: #ffffff;
+`;
 
 export const ReposDescription = styled.p`
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: #8D8D8D;
+  color: #8d8d8d;
   display: flex;
   width: 90%;
 `;
 
 export const ButonShare = styled.button`
-display: flex;
-align-items: flex-start;
-padding: 10px 32px;
-width: 190px;
-height: 47px;
-background: linear-gradient(90deg, #0487FF 0%, #1665C1 100%);
-box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
-border-radius: 8px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 27px;
-text-transform: uppercase;
-color: #FFFFFF;
-border: none;
-@media (max-width: 768px) {
-  width: 100px;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 32px;
+  width: 190px;
   height: 47px;
-  font-size: 12px;
-  padding: 10px 5px 10px 5px;
-}
+  background: linear-gradient(90deg, #0487ff 0%, #1665c1 100%);
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  @media (max-width: 768px) {
+    width: 100px;
+    height: 47px;
+    font-size: 12px;
+    padding: 10px 5px 10px 5px;
+  }
 `;

@@ -23,7 +23,8 @@ import {
   Repos,
   ReposTitle,
   ReposDescription,
-  ButonShare
+  ButonShare,
+  ButtonsContainer,
 } from "./style";
 
 const Profile = ({ nick }) => {
@@ -56,100 +57,110 @@ const Profile = ({ nick }) => {
       .catch((error) => {
         console.error(`API error: ${error}`);
       });
-    
   }, []);
 
-
   const sliding = () => {
-    if (slidestyle == "repos") { 
-      setStyle("fav");   
+    if (slidestyle == "repos") {
+      setStyle("fav");
     } else {
       setStyle("repos");
     }
   };
-  if(slidestyle == "repos") {
-    return (  
+  if (slidestyle == "repos") {
+    return (
       <PopUpContainer>
-      {userData && (
-        <Body>
-          <BioContainer>
-            <UserLogo src={userData.avatar_url} />
-            <TextContainer>          
+        {userData && (
+          <Body>
+            <BioContainer>
+              <UserLogo src={userData.avatar_url} />
+              <TextContainer>
                 <Title>{nick}</Title>
                 <SubTitle>{userData.bio}</SubTitle>
-            </TextContainer>
-          </BioContainer>
+              </TextContainer>
+            </BioContainer>
 
-          <ReposContainer>
-            <ButtonRepos onClick={sliding}>
-              Repositórios<Ball>{userData.public_repos}</Ball>{" "}
-            </ButtonRepos>
-            <ButtonFavs onClick={sliding}>
-              Favoritos
-              {userFavRepos && <Ball>{userFavRepos.length}</Ball>}
-            </ButtonFavs>
-            <Slide className={slidestyle} />
-            
-            <ReposList>
-              {userRepos.map((repos, index) => {
-                return (
-                  <Repos key={index}>
-                    <div>
-                      <ReposTitle>{repos.name}</ReposTitle>
-                      <ReposDescription>{repos.description || "Sem Descrição"}</ReposDescription>
-                    </div>
-                    <ButonShare>Compartilhar</ButonShare>
-                  </Repos>
-                );
-              })}
-            </ReposList>
-          </ReposContainer>
-        </Body>
-      )}
-    </PopUpContainer>
-  );
+            <ReposContainer>
+              <ButtonsContainer>
+                <div style={{ display: "flex", width: "100%" }}>
+                  <ButtonRepos onClick={sliding}>
+                    Repositórios<Ball>{userData.public_repos}</Ball>{" "}
+                  </ButtonRepos>
+                  <ButtonFavs onClick={sliding}>
+                    Favoritos
+                    {userFavRepos && <Ball>{userFavRepos.length}</Ball>}
+                  </ButtonFavs>
+                </div>
+                <Slide className={slidestyle} />
+              </ButtonsContainer>
+
+              <ReposList>
+                {userRepos.map((repos, index) => {
+                  return (
+                    <Repos key={index}>
+                      <div>
+                        <ReposTitle>{repos.name}</ReposTitle>
+                        <ReposDescription>
+                          {repos.description || "Sem Descrição"}
+                        </ReposDescription>
+                      </div>
+                      <ButonShare>Compartilhar</ButonShare>
+                    </Repos>
+                  );
+                })}
+              </ReposList>
+            </ReposContainer>
+          </Body>
+        )}
+      </PopUpContainer>
+    );
   } else {
-    return (  
+    return (
       <PopUpContainer>
-      {userData && (
-        <Body>
-          <BioContainer>
-            <UserLogo src={userData.avatar_url} />
-            <TextContainer>
-              <Title>{nick}</Title>
-              <SubTitle>{userData.bio}</SubTitle>
-            </TextContainer>
-          </BioContainer>
+        {userData && (
+          <Body>
+            <BioContainer>
+              <UserLogo src={userData.avatar_url} />
+              <TextContainer>
+                <Title>{nick}</Title>
+                <SubTitle>{userData.bio}</SubTitle>
+              </TextContainer>
+            </BioContainer>
 
-          <ReposContainer>
-            <ButtonRepos onClick={sliding}>
-              Repositórios<Ball>{userData.public_repos}</Ball>{" "}
-            </ButtonRepos>
-            <ButtonFavs onClick={sliding}>
-              Favoritos
-              {userFavRepos && <Ball>{userFavRepos.length}</Ball>}
-            </ButtonFavs>
-            <Slide className={slidestyle}/>
-            
-            <ReposList>
-              {userFavRepos.map((repos, index) => {
-                return (
-                  <Repos key={index}>
-                    <div>
-                      <ReposTitle>{repos.name}</ReposTitle>
-                      <ReposDescription>{repos.description || "Sem Descrição"}</ReposDescription>
-                    </div>
-                  </Repos>
-                );
-              })}
-            </ReposList>
-          </ReposContainer>
-        </Body>
-      )}
-    </PopUpContainer>
+            <ReposContainer>
+              <ButtonsContainer>
+                <div style={{ display: "flex", width: "100%" }}>
+                  <ButtonRepos onClick={sliding}>
+                    Repositórios<Ball>{userData.public_repos}</Ball>{" "}
+                  </ButtonRepos>
+                  <ButtonFavs onClick={sliding}>
+                    Favoritos
+                    {userFavRepos && <Ball>{userFavRepos.length}</Ball>}
+                  </ButtonFavs>
+                </div>
+                <Slide className={slidestyle} />
+              </ButtonsContainer>
+              
+              <ReposList>
+                {userFavRepos.map((repos, index) => {
+                  return (
+                    <Repos key={index}>
+                      <div>
+                        <ReposTitle>{repos.name}</ReposTitle>
+                        <ReposDescription>
+                          {repos.description || "Sem Descrição"}
+                        </ReposDescription>
+                      </div>
+                      <ButonShare>Compartilhar</ButonShare>
+                    </Repos>
+                  );
+                })}
+              </ReposList>
+            </ReposContainer>
+          </Body>
+        )}
+      </PopUpContainer>
     );
   }
-  
 };
 
 export default MapTo("reactapp/components/searchprofile-component")(Profile);
