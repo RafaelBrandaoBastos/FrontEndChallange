@@ -17,7 +17,6 @@ export const WeatherImage = styled.img`
 `;
 
 export const WeatheTemp = styled.p`
-
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 700;
@@ -30,9 +29,9 @@ color: #222222;
 export const City = styled.p`
 font-family: 'Poppins';
 font-style: normal;
-font-weight: 700;
-font-size: 48px;
-line-height: 72px;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
 /* identical to box height */
 text-align: center;
 /* Secundária */

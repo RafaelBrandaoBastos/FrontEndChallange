@@ -4,8 +4,8 @@ import axios from "axios";
 
 function Weather() {
   const [location, setLocation] = useState(false);
-  const [city, setCity] = useState("");
-  const [states, setStates] = useState("");
+  const [city, setCity] = useState("Localização");
+  const [states, setStates] = useState("Indefinida");
   const [icon, setIcon] = useState("");
   const [temp, setTemp] = useState("");
   const [weather, setWeather] = useState(false);

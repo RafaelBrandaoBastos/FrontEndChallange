@@ -35,17 +35,10 @@ const Login = ({
         
     const {register, handleSubmit, formState: { errors }} =  useForm();
     const history = useHistory();
-    
+    let [placeholderu, setplaceholderu] = useState();
 
-    useEffect(() => {    
-        if(localStorage.getItem("user.user") != null && localStorage.getItem("user.password") !=null) {  
-            setTimeout(() => {{
-            if(localStorage.getItem("user.user") != null && localStorage.getItem("user.password") !=null) { 
-                console.log("NextPage");
-                history.push("/content/reactapp/us/en/home0.html");
-            }}}, 5500);
-        }
-    },[]);
+
+    useEffect(() => { },[]);
 
     const onSubmit = (userData, event) => {
         event.preventDefault();
