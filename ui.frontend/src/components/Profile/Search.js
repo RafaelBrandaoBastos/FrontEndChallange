@@ -38,7 +38,6 @@ const Profile = ({ nick }) => {
   const [slidestyle, setStyle] = useState("repos");
 
   useEffect(() => {
-    console.log("submit");
     fetch(`https://api.github.com/users/${nick}`)
       .then((response) => response.json())
       .then((data) => setUserData(data))
@@ -56,18 +55,15 @@ const Profile = ({ nick }) => {
       .then((data) => setUserRepos(data))
       .catch((error) => {
         console.error(`API error: ${error}`);
-        console.log(userRepos);
       });
     
   }, []);
 
 
   const sliding = () => {
-    if (slidestyle == "repos") {
-      console.log("you just clicked" + slidestyle);   
+    if (slidestyle == "repos") { 
       setStyle("fav");   
     } else {
-      console.log("you just clicked" + slidestyle);
       setStyle("repos");
     }
   };
@@ -78,9 +74,9 @@ const Profile = ({ nick }) => {
         <Body>
           <BioContainer>
             <UserLogo src={userData.avatar_url} />
-            <TextContainer>
-              <Title>{nick}</Title>
-              <SubTitle>{userData.bio}</SubTitle>
+            <TextContainer>          
+                <Title>{nick}</Title>
+                <SubTitle>{userData.bio}</SubTitle>
             </TextContainer>
           </BioContainer>
 

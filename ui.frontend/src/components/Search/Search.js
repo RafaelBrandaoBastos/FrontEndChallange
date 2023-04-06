@@ -101,7 +101,6 @@ const Search = ({
                     <Input
                       onChange={(e) => {
                         setInput(e.target.value);
-                        console.log(JSON.stringify(e.target.value));
                       }}
                     />
                   </div>
@@ -143,7 +142,8 @@ const Search = ({
       </>
     );
   } else {
-    return (       
+    return (
+      <Container>       
         <PopUpContainer>
         <ProfileContainer>
           <Header>
@@ -151,7 +151,8 @@ const Search = ({
           </Header>   
           <Profile nick = {nick}/>   
         </ProfileContainer>
-      </PopUpContainer>     
+      </PopUpContainer> 
+    </Container>    
     );
   }
 };

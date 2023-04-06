@@ -4,7 +4,10 @@ export const PopUpContainer = styled.div`
   position: absolute;
   width: 100%;
   height: 90%;
-  padding-right: 120px;
+  padding: 0px 150px 20px 20px;
+  @media (max-width: 1300px) {
+    padding: 0px 0px 0px 0px;
+  }
 `;
 export const Body = styled.div`
   display: flex;
@@ -12,31 +15,58 @@ export const Body = styled.div`
   align-items: flex-start;
   width: 100%;
   height: 100%;
+  @media (max-width: 1300px) {
+    display: block;
+    width: 100%;
+  }
+
 `;
 export const BioContainer = styled.div`
+  outline-style: solid;
+  outline-color: red;
   justify-content: center;
-  align-items: space-between;
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   width: 350px;
-  height: 55%;
+  height: 40%;
+  @media (max-width: 1300px) {
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 25%;
+    align-items: center;
+    justify-content: flex-start;
+  }
 `;
 export const UserLogo = styled.img`
   width: 174px;
   height: 174px;
   border-radius: 50%;
+  @media (max-width: 1300px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 export const TextContainer = styled.div`
+  outline-style: solid;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  height: 15%;
+  width: 70%;
+  height: auto;
+  padding-top: 25px;
   align-items: flex-start;
   justify-content: center;
   color: #ffffff;
+  @media (max-width: 1300px) {
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+  }
 `;
 
 export const Title = styled.p`
+outline-style: solid;
   text-align: center;
   font-family: "Inter";
   font-style: normal;
@@ -48,15 +78,28 @@ export const Title = styled.p`
   font-size: 32px;
   color: #ffffff;
   margin-bottom: 10px;
+  @media (max-width: 1300px) {
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px
+  }
 `;
 export const SubTitle = styled.p`
+outline-style: solid;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  width: 90%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
   text-align: center;
   color: #8d8d8d;
+  @media (max-width: 1300px) {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
 `;
 
 export const ReposContainer = styled.div`
@@ -67,9 +110,13 @@ export const ReposContainer = styled.div`
   height: 90%;
   padding-left: 50px;
   align-items: flex-start;
+  @media (max-width: 1300px) {
+    height: 70%;
+    padding-left: 0px;
+  }
 `;
 export const ButtonRepos = styled.button`
-  width: 200px;
+  width: 170px;
   height: 55px;
   background: #2a2a2a;
   font-family: "Poppins";
@@ -132,18 +179,28 @@ export const Slide = styled.div`
   &.repos {
     width: 200px;
     height: 0px;
-    border: 2px solid rgba(159, 159, 159, 0.7);
-    position: absolute;
-    top: 50px;
+    border: 2px solid rgba(159, 159, 159, 0.7)
     left: 375px;
   }
   &.fav {
     width: 140px;
     height: 0px;
-    border: 2px solid rgba(159, 159, 159, 0.7);
-    position: absolute;
-    top: 50px;
-    left: 605px;
+    border: 2px solid rgba(159, 159, 159, 0.7)
+    left: 578px;
+  }
+  @media (max-width: 1300px) {
+    &.repos {
+      width: 180px;
+      height: 0px;
+      border: 2px solid rgba(159, 159, 159, 0.7);
+      left: 0%;
+    }
+    &.fav {
+      width: 145px;
+      height: 0px;
+      border: 2px solid rgba(159, 159, 159, 0.7);
+      margin-left: 48%;
+    }  
   }
 `;
 export const ReposList = styled.div`
@@ -162,6 +219,9 @@ export const Repos = styled.div`
   justify-content: space-between;
   flex-wrap: no-wrap;
   border-bottom: 2px solid rgba(159, 159, 159, 0.7);
+  @media (max-width: 1300px) {
+    min-height: 30%;
+  }
 `;
 
 export const ReposTitle = styled.p`
@@ -203,4 +263,10 @@ line-height: 27px;
 text-transform: uppercase;
 color: #FFFFFF;
 border: none;
+@media (max-width: 768px) {
+  width: 100px;
+  height: 47px;
+  font-size: 12px;
+  padding: 10px 5px 10px 5px;
+}
 `;

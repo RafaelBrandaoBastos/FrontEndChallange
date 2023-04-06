@@ -178,7 +178,7 @@ export const PopUpContainer = styled.div`
   height: 100vh;
 `;
 export const ProfileContainer = styled.div`
-position: relative;
+  position: relative;
   display: block;
   background-color: #242424;
   width: 85%;
@@ -187,11 +187,11 @@ position: relative;
   max-height: 814px;
   outline-style: solid;
   outline-color: red;
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
     padding-right: 0px;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     height: 100%;
   }
 `;
@@ -200,8 +200,11 @@ export const Header = styled.div`
   padding-right: 20px;
   justify-content: flex-end;
   align-items: center;
-    width: 100%;
-    height: 10%;
+  width: 100%;
+  height: 10%;
+  @media (max-width: 1300px) {
+    justify-content: flex-start;
+  }
 
 `;
 export const ButtonVoltar = styled.button`
@@ -215,7 +218,6 @@ export const ButtonVoltar = styled.button`
     box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 50px;   
-    margin-top: 30px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -223,4 +225,8 @@ export const ButtonVoltar = styled.button`
     line-height: 27px;
     text-transform: uppercase;
     color: #FFFFFF;
+    @media (max-width: 1300px) {
+      width: 90px;
+      height: 37px;
+    }
 `;
