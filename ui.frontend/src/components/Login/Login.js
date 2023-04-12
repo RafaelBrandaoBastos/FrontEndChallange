@@ -61,6 +61,7 @@ const Login = ({
     const handleChangepassword = event => {
         console.log(event.target.value);
         setDatapassword(event.target.value);
+        
     }
 
     return(
