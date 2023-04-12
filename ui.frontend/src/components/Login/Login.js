@@ -56,12 +56,13 @@ const Login = ({
     const handleChangeuser = event => {
         console.log(event.target.value);
         setDatauser(event.target.value);
+        
     }
 
     const handleChangepassword = event => {
         console.log(event.target.value);
         setDatapassword(event.target.value);
-        
+
     }
 
     return(

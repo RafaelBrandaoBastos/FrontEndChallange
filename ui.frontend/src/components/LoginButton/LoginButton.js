@@ -9,7 +9,7 @@ const LoginButton = ({lfont, btype, bcolor, lcolor, lsize, ltext}) => {
     )  
 }; 
 LoginButton.defaultProps = {       
-    bcolor: "#C13216",
+    bcolor: "#C13215",
     lcolor: "#FFFFFF" ,
     lsize: "18px", 
     lfont: "Poppins",
