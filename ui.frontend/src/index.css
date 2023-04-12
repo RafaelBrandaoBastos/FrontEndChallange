@@ -15,19 +15,39 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
+}
 
 html,
 body {
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
 
 body {
-  background-color: #ffffff;
+    background-color: #e5e5e5;
+    padding: 0 !important;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #ffffff;
+    }
 }
 
 h1,
@@ -35,9 +55,14 @@ h2,
 h3,
 h4,
 h5,
-p,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
 .nav-container,
 .rw-box {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-  color: #000000;
+    color: #000000;
 }

@@ -1,0 +1,246 @@
+{
+  "project-settings": {
+    "code-owner": "React App",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "reactapp",
+    "model-interface-pkg": "com.reactapp.core.models",
+    "model-impl-pkg": "com.reactapp.core.models.impl"
+  },
+  "name": "search-component",
+  "title": "Search Component",
+  "field": "search",
+  "group": "React App - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": ["request"],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "title",
+        "type": "textfield",
+        "label": "Digite o conteúdo do Título",
+        "json-expose": true,
+        "json-property": "title"
+      },
+      {
+        "field": "titleColor",
+        "label": "Cor do Título",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleColor"
+      },
+      {
+        "field": "titleSize",
+        "type": "textfield",
+        "label": "Digite um tamanho do Título em px",
+        "json-expose": true,
+        "json-property": "titleSize"
+      },
+      {
+        "field": "titlefont",
+        "type": "select",
+        "label": "Fonte para o título",
+        "json-expose": true,
+        "json-property": "titlefont",
+        "attributes": {
+          "defaultValue": "poppins",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "nunito",
+            "attributes": {
+              "text": "Nunito",
+              "value": "Nunito"
+            }
+          },
+          {
+            "field": "inter",
+            "attributes": {
+              "selected": "true",
+              "text": "Inter",
+              "value": "Inter"
+            }
+          },
+          {
+            "field": "montserrat",
+            "attributes": {
+              "text": "Montserrat",
+              "value": "Montserrat"
+            }
+          },
+          {
+            "field": "poppins",
+            "attributes": {
+              "text": "Poppins",
+              "value": "Poppins"
+            }
+          }
+        ]
+      },
+
+      {
+        "field": "text",
+        "type": "textfield",
+        "label": "Digite o conteúdo do texto",
+        "json-expose": true,
+        "json-property": "text"
+      },
+      {
+        "field": "textColor",
+        "label": "Cor do texto",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "textColor"
+      },
+      {
+        "field": "textSize",
+        "type": "textfield",
+        "label": "Digite um tamanho do texto em px",
+        "json-expose": true,
+        "json-property": "textSize"
+      },
+      {
+        "field": "textfont",
+        "type": "select",
+        "label": "Fonte para o texto",
+        "json-expose": true,
+        "json-property": "textfont",
+        "attributes": {
+          "defaultValue": "poppins",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "nunito",
+            "attributes": {
+              "text": "Nunito",
+              "value": "Nunito"
+            }
+          },
+          {
+            "field": "inter",
+            "attributes": {
+              "selected": "true",
+              "text": "Inter",
+              "value": "Inter"
+            }
+          },
+          {
+            "field": "montserrat",
+            "attributes": {
+              "text": "Montserrat",
+              "value": "Montserrat"
+            }
+          },
+          {
+            "field": "poppins",
+            "attributes": {
+              "text": "Poppins",
+              "value": "Poppins"
+            }
+          }
+        ]
+      },
+
+      {
+        "field": "label",
+        "type": "textfield",
+        "label": "Digite uma label para o botão",
+        "json-expose": true,
+        "json-property": "label"
+      },
+      {
+        "field": "labelColor",
+        "label": "Cor a label",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelColor"
+      },
+      {
+        "field": "labelSize",
+        "type": "textfield",
+        "label": "Digite um tamanho da label em px",
+        "json-expose": true,
+        "json-property": "labelSize"
+      },
+      {
+        "field": "buttonColor",
+        "label": "Cor do botão",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "buttonColor"
+      },
+      {
+        "field": "labelfont",
+        "type": "select",
+        "label": "Fonte para a label",
+        "json-expose": true,
+        "json-property": "labelfont",
+        "attributes": {
+          "defaultValue": "poppins",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "nunito",
+            "attributes": {
+              "text": "Nunito",
+              "value": "Nunito"
+            }
+          },
+          {
+            "field": "inter",
+            "attributes": {
+              "selected": "true",
+              "text": "Inter",
+              "value": "Inter"
+            }
+          },
+          {
+            "field": "montserrat",
+            "attributes": {
+              "text": "Montserrat",
+              "value": "Montserrat"
+            }
+          },
+          {
+            "field": "poppins",
+            "attributes": {
+              "text": "Poppins",
+              "value": "Poppins"
+            }
+          }
+        ]
+      },
+
+      {
+        "field": "backgroundImage",
+        "type": "image",
+        "label": "Imagem Background",
+        "json-expose": true,
+        "json-property": "backgroundImage"
+      },
+
+      {
+        "field": "logoImage",
+        "type": "image",
+        "label": "Imagem Logo",
+        "json-expose": true,
+        "json-property": "logoImage"
+      }
+    ]
+  }
+}
